@@ -1,0 +1,2999 @@
+{
+  "id": "a7d3d917-456e-4af0-8bb4-3b0c4e8399d2",
+  "revision": 0,
+  "last_node_id": 5839,
+  "last_link_id": 15043,
+  "nodes": [
+    {
+      "id": 22,
+      "type": "LoadImage",
+      "pos": [
+        956.8200372874496,
+        308.57812616498245
+      ],
+      "size": [
+        280.8412410273354,
+        326
+      ],
+      "flags": {},
+      "order": 0,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            15011
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.33.0",
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "00058-3550631218.png",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "00058-3550631218.png",
+        "upload": "image"
+      }
+    },
+    {
+      "id": 5836,
+      "type": "LoadImage",
+      "pos": [
+        634.0708500239754,
+        796.7992029168516
+      ],
+      "size": [
+        282.798828125,
+        314.0000000000001
+      ],
+      "flags": {},
+      "order": 1,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            15038
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.33.0",
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "1055d4ff-b1c2-499e-8537-fb78b94a92d0-background_removed_a3d28050-7cbf-4898-8877-f84cd398dcf3.webp",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "1055d4ff-b1c2-499e-8537-fb78b94a92d0-background_removed_a3d28050-7cbf-4898-8877-f84cd398dcf3.webp",
+        "upload": "image"
+      }
+    },
+    {
+      "id": 5838,
+      "type": "LoadImage",
+      "pos": [
+        330.9850423254478,
+        794.9178667968484
+      ],
+      "size": [
+        282.798828125,
+        314.0000000000001
+      ],
+      "flags": {},
+      "order": 2,
+      "mode": 0,
+      "inputs": [],
+      "outputs": [
+        {
+          "name": "IMAGE",
+          "type": "IMAGE",
+          "links": [
+            15039
+          ]
+        },
+        {
+          "name": "MASK",
+          "type": "MASK",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.33.0",
+        "Node name for S&R": "LoadImage"
+      },
+      "widgets_values": [
+        "00058-3550631218.png",
+        "image"
+      ],
+      "widgets_values_named": {
+        "image": "00058-3550631218.png",
+        "upload": "image"
+      }
+    },
+    {
+      "id": 5837,
+      "type": "ImageBatchMulti",
+      "pos": [
+        966.5232662965091,
+        703.8699188150139
+      ],
+      "size": [
+        270,
+        102
+      ],
+      "flags": {},
+      "order": 5,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image_1",
+          "type": "IMAGE",
+          "link": 15039
+        },
+        {
+          "name": "image_2",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 15038
+        }
+      ],
+      "outputs": [
+        {
+          "name": "images",
+          "type": "IMAGE",
+          "links": [
+            15040
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfyui-kjnodes",
+        "ver": "60cd6bc1870db94c6eeb05fbe455147a8e91c4e9"
+      },
+      "widgets_values": [
+        2,
+        null
+      ],
+      "widgets_values_named": {
+        "inputcount": 2,
+        "Update inputs": null
+      }
+    },
+    {
+      "id": 5831,
+      "type": "4536a3cd-6702-4695-812b-f2550ef24d4f",
+      "pos": [
+        1265.6209103479048,
+        -140.957719772384
+      ],
+      "size": [
+        556.9031615244871,
+        355.96210146366343
+      ],
+      "flags": {},
+      "order": 3,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "seed",
+          "name": "value",
+          "type": "INT",
+          "widget": {
+            "name": "value"
+          },
+          "link": null
+        },
+        {
+          "label": "qwen3_vl",
+          "name": "clip_name_1",
+          "type": "COMBO",
+          "widget": {
+            "name": "clip_name_1"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "generated_text",
+          "name": "generated_text",
+          "type": "STRING",
+          "links": [
+            15043
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.30.0",
+        "previewExposures": []
+      },
+      "widgets_values": [
+        "Video game transition cutscene, 5 seconds long, colorful stylized cartoon style, a five color rainbow shoots up from the bottom of the frame, fanning out and crashes into the top of the frame, taking up the total vertical height, the rainbow pauses for a moment then spreads out, emitting glowing stars and hearts that pop off away in arcs leaving behind thin glowing trails that fade away.",
+        4,
+        "Qwen/Huihui-Qwen3-VL-4B-Instruct-abliterated-fp8_scaled.safetensors",
+        2048
+      ],
+      "widgets_values_named": {
+        "string": "Video game transition cutscene, 5 seconds long, colorful stylized cartoon style, a five color rainbow shoots up from the bottom of the frame, fanning out and crashes into the top of the frame, taking up the total vertical height, the rainbow pauses for a moment then spreads out, emitting glowing stars and hearts that pop off away in arcs leaving behind thin glowing trails that fade away.",
+        "value": 4,
+        "clip_name_1": "Qwen/Huihui-Qwen3-VL-4B-Instruct-abliterated-fp8_scaled.safetensors",
+        "max_length": 2048
+      }
+    },
+    {
+      "id": 5804,
+      "type": "068fb089-775a-4cab-8190-5d422e120f35",
+      "pos": [
+        1265.6209103479048,
+        317.3615817493207
+      ],
+      "size": [
+        567.130011524052,
+        277.2718336259146
+      ],
+      "flags": {},
+      "order": 4,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 15011
+        },
+        {
+          "label": "qwen3_vl",
+          "name": "clip_name",
+          "type": "COMBO",
+          "widget": {
+            "name": "clip_name"
+          },
+          "link": null
+        },
+        {
+          "label": "seed",
+          "name": "sampling_mode.seed",
+          "type": "INT",
+          "widget": {
+            "name": "sampling_mode.seed"
+          },
+          "link": null
+        }
+      ],
+      "outputs": [
+        {
+          "label": "generated_text",
+          "name": "generated_text",
+          "type": "STRING",
+          "links": [
+            15012
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.30.0",
+        "previewExposures": []
+      },
+      "widgets_values": [
+        "Generate a detailed description of the white haired young woman in the red hood and cloak as she walks along a bridge talking to herself. She has an annoyed expression as she speaks <d>[English, annoyed] Why did grandma move to wolf infested woods anyway?</d>",
+        "Qwen/Huihui-Qwen3-VL-4B-Instruct-abliterated-fp8_scaled.safetensors",
+        0,
+        "I2VA",
+        2048
+      ],
+      "widgets_values_named": {
+        "string": "Generate a detailed description of the white haired young woman in the red hood and cloak as she walks along a bridge talking to herself. She has an annoyed expression as she speaks <d>[English, annoyed] Why did grandma move to wolf infested woods anyway?</d>",
+        "clip_name": "Qwen/Huihui-Qwen3-VL-4B-Instruct-abliterated-fp8_scaled.safetensors",
+        "sampling_mode.seed": 0,
+        "choice": "I2VA",
+        "max_length": 2048
+      }
+    },
+    {
+      "id": 5833,
+      "type": "4e51c264-5702-47f1-820b-811e2554aafd",
+      "pos": [
+        1265.6209103479048,
+        703.8699188150139
+      ],
+      "size": [
+        573.3569800281398,
+        433.8282027254188
+      ],
+      "flags": {},
+      "order": 8,
+      "mode": 0,
+      "inputs": [
+        {
+          "label": "seed",
+          "name": "value",
+          "type": "INT",
+          "widget": {
+            "name": "value"
+          },
+          "link": null
+        },
+        {
+          "label": "qwen3_vl",
+          "name": "clip_name_1",
+          "type": "COMBO",
+          "widget": {
+            "name": "clip_name_1"
+          },
+          "link": null
+        },
+        {
+          "name": "image",
+          "shape": 7,
+          "type": "IMAGE",
+          "link": 15040
+        }
+      ],
+      "outputs": [
+        {
+          "label": "generated_text",
+          "name": "generated_text",
+          "type": "STRING",
+          "links": [
+            15041
+          ]
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.30.0",
+        "previewExposures": []
+      },
+      "widgets_values": [
+        "subject_definitions:\n<Subject 1> is a 21 year old woman in <Picture 1>, she has long shiny black hair, she has a thin waist and wide hips, wearing a white tank top and short black athletic shorts.\n<Subject 2> is a bottle of Ramune soda in <Picture 2>, with Japanese text. \n\nsummary:\nThe background shows burst of sparkling light blue liquid with colorful stars leaving shimmering lines erupt from the bottom corners of the frame.\n\nThe target video shows a high energy product ad, depicting the woman holding and drinking the Ramune bottle at dynamic angles, with several quick cuts. \n- shot 1: the woman catches the bottle with a giggle\n- shot 2: closeup of the woman taking a sip\n- shot 3: closeup of the bottle's label\n- shot 4: closeup of the woman letting out a sigh of delight after her sip of the drink\n- shot 5: medium shot of the woman holding the bottle out to the camera, making a V shape with her fingers and smiling cheerfully as she says in a happy tone of voice <d>[Japanese] 嬉しいなぁ！</d> She lets out a small giggle of embarrassment.",
+        0,
+        "Qwen/Huihui-Qwen3-VL-4B-Instruct-abliterated-fp8_scaled.safetensors",
+        "from-prompt",
+        2048
+      ],
+      "widgets_values_named": {
+        "string": "subject_definitions:\n<Subject 1> is a 21 year old woman in <Picture 1>, she has long shiny black hair, she has a thin waist and wide hips, wearing a white tank top and short black athletic shorts.\n<Subject 2> is a bottle of Ramune soda in <Picture 2>, with Japanese text. \n\nsummary:\nThe background shows burst of sparkling light blue liquid with colorful stars leaving shimmering lines erupt from the bottom corners of the frame.\n\nThe target video shows a high energy product ad, depicting the woman holding and drinking the Ramune bottle at dynamic angles, with several quick cuts. \n- shot 1: the woman catches the bottle with a giggle\n- shot 2: closeup of the woman taking a sip\n- shot 3: closeup of the bottle's label\n- shot 4: closeup of the woman letting out a sigh of delight after her sip of the drink\n- shot 5: medium shot of the woman holding the bottle out to the camera, making a V shape with her fingers and smiling cheerfully as she says in a happy tone of voice <d>[Japanese] 嬉しいなぁ！</d> She lets out a small giggle of embarrassment.",
+        "value": 0,
+        "clip_name_1": "Qwen/Huihui-Qwen3-VL-4B-Instruct-abliterated-fp8_scaled.safetensors",
+        "choice": "from-prompt",
+        "max_length": 2048
+      }
+    },
+    {
+      "id": 5832,
+      "type": "PreviewAny",
+      "pos": [
+        1874.3903003122534,
+        -140.957719772384
+      ],
+      "size": [
+        724.3810605496533,
+        356.7001400102134
+      ],
+      "flags": {},
+      "order": 6,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "source",
+          "type": "*",
+          "link": 15043
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.25.0",
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [],
+      "widgets_values_named": {}
+    },
+    {
+      "id": 21,
+      "type": "PreviewAny",
+      "pos": [
+        1874.3903003122534,
+        317.3615817493207
+      ],
+      "size": [
+        729.8159371368374,
+        275.83232783469134
+      ],
+      "flags": {},
+      "order": 7,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "source",
+          "type": "*",
+          "link": 15012
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.25.0",
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [],
+      "widgets_values_named": {}
+    },
+    {
+      "id": 5839,
+      "type": "PreviewAny",
+      "pos": [
+        1874.3903003122534,
+        703.8699188150139
+      ],
+      "size": [
+        734.2495861640541,
+        335.0765333437223
+      ],
+      "flags": {},
+      "order": 9,
+      "mode": 0,
+      "inputs": [
+        {
+          "name": "source",
+          "type": "*",
+          "link": 15041
+        }
+      ],
+      "outputs": [
+        {
+          "name": "STRING",
+          "type": "STRING",
+          "links": null
+        }
+      ],
+      "properties": {
+        "cnr_id": "comfy-core",
+        "ver": "0.25.0",
+        "Node name for S&R": "PreviewAny"
+      },
+      "widgets_values": [],
+      "widgets_values_named": {}
+    }
+  ],
+  "links": [
+    [
+      15011,
+      22,
+      0,
+      5804,
+      0,
+      "IMAGE"
+    ],
+    [
+      15012,
+      5804,
+      0,
+      21,
+      0,
+      "STRING"
+    ],
+    [
+      15038,
+      5836,
+      0,
+      5837,
+      1,
+      "IMAGE"
+    ],
+    [
+      15039,
+      5838,
+      0,
+      5837,
+      0,
+      "IMAGE"
+    ],
+    [
+      15040,
+      5837,
+      0,
+      5833,
+      2,
+      "IMAGE"
+    ],
+    [
+      15041,
+      5833,
+      0,
+      5839,
+      0,
+      "STRING"
+    ],
+    [
+      15043,
+      5831,
+      0,
+      5832,
+      0,
+      "STRING"
+    ]
+  ],
+  "groups": [],
+  "definitions": {
+    "subgraphs": [
+      {
+        "id": "068fb089-775a-4cab-8190-5d422e120f35",
+        "version": 1,
+        "state": {
+          "lastGroupId": 159,
+          "lastNodeId": 5839,
+          "lastLinkId": 15043,
+          "lastRerouteId": 57
+        },
+        "revision": 0,
+        "config": {},
+        "name": "I2VA Prompt Generator",
+        "inputNode": {
+          "id": -10,
+          "bounding": [
+            -202.39430307234173,
+            368.133171271659,
+            128,
+            167.99999999999994
+          ]
+        },
+        "outputNode": {
+          "id": -20,
+          "bounding": [
+            2259.984375,
+            142.30322439484178,
+            132.568359375,
+            68
+          ]
+        },
+        "inputs": [
+          {
+            "id": "7b749dae-8eb4-4275-86ed-f8ebd78420ca",
+            "name": "image",
+            "type": "IMAGE",
+            "linkIds": [
+              5
+            ],
+            "localized_name": "image",
+            "shape": 7,
+            "pos": [
+              -98.39430307234173,
+              392.133171271659
+            ]
+          },
+          {
+            "id": "b181dd05-a34b-4581-9fc1-1be0c5075781",
+            "name": "string",
+            "type": "STRING",
+            "linkIds": [
+              15010
+            ],
+            "pos": [
+              -98.39430307234173,
+              412.133171271659
+            ]
+          },
+          {
+            "id": "35a65af6-f9d6-4774-8020-eea04bb0fb41",
+            "name": "clip_name",
+            "type": "COMBO",
+            "linkIds": [
+              17
+            ],
+            "pos": [
+              -98.39430307234173,
+              432.133171271659
+            ]
+          },
+          {
+            "id": "e5d27fdf-40e0-48a7-962c-a22d839b96d1",
+            "name": "sampling_mode.seed",
+            "type": "INT",
+            "linkIds": [
+              20
+            ],
+            "label": "seed",
+            "pos": [
+              -98.39430307234173,
+              452.133171271659
+            ]
+          },
+          {
+            "id": "fbba13c2-e359-48ed-bb3e-53738388dcab",
+            "name": "choice",
+            "type": "COMBO",
+            "linkIds": [
+              14953
+            ],
+            "pos": [
+              -98.39430307234173,
+              472.133171271659
+            ]
+          },
+          {
+            "id": "d785582e-06c7-4412-b209-09cd693fc6f0",
+            "name": "max_length",
+            "type": "INT",
+            "linkIds": [
+              15031
+            ],
+            "pos": [
+              -98.39430307234173,
+              492.133171271659
+            ]
+          }
+        ],
+        "outputs": [
+          {
+            "id": "97cc8f5a-5a35-497e-905a-56d7cef16b0d",
+            "name": "generated_text",
+            "type": "STRING",
+            "linkIds": [
+              18
+            ],
+            "label": "generated_text",
+            "pos": [
+              2283.984375,
+              166.30322439484178
+            ]
+          }
+        ],
+        "widgets": [],
+        "nodes": [
+          {
+            "id": 5755,
+            "type": "JoinStringMulti",
+            "pos": [
+              1176.6024772403248,
+              -98.75240622507145
+            ],
+            "size": [
+              270,
+              170
+            ],
+            "flags": {},
+            "order": 4,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "string_1",
+                "name": "string_1",
+                "type": "STRING",
+                "link": 7
+              },
+              {
+                "localized_name": "string_2",
+                "name": "string_2",
+                "shape": 7,
+                "type": "STRING",
+                "link": 14954
+              },
+              {
+                "name": "string_3",
+                "shape": 7,
+                "type": "STRING",
+                "link": 14
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "string",
+                "name": "string",
+                "type": "STRING",
+                "links": [
+                  10,
+                  13
+                ]
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfyui-kjnodes",
+              "ver": "1.4.6",
+              "Node name for S&R": "JoinStringMulti"
+            },
+            "widgets_values": [
+              3,
+              " ",
+              false,
+              null
+            ],
+            "widgets_values_named": {
+              "inputcount": 3,
+              "delimiter": " ",
+              "return_list": false,
+              "Update inputs": null
+            }
+          },
+          {
+            "id": 5757,
+            "type": "PreviewAny",
+            "pos": [
+              1633.5580538985755,
+              -75.69882442291951
+            ],
+            "size": [
+              549.441056437433,
+              122
+            ],
+            "flags": {},
+            "order": 5,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "source",
+                "name": "source",
+                "type": "*",
+                "link": 10
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "STRING",
+                "name": "STRING",
+                "type": "STRING",
+                "links": null
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.30.0",
+              "Node name for S&R": "PreviewAny"
+            },
+            "widgets_values": [],
+            "widgets_values_named": {}
+          },
+          {
+            "id": 5759,
+            "type": "PreviewAny",
+            "pos": [
+              1610,
+              190
+            ],
+            "size": [
+              589.984375,
+              559.984375
+            ],
+            "flags": {},
+            "order": 7,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "source",
+                "name": "source",
+                "type": "*",
+                "link": 3
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "STRING",
+                "name": "STRING",
+                "type": "STRING",
+                "links": null
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.25.0",
+              "Node name for S&R": "PreviewAny"
+            },
+            "widgets_values": [],
+            "widgets_values_named": {}
+          },
+          {
+            "id": 5760,
+            "type": "TextGenerate",
+            "pos": [
+              1110,
+              190
+            ],
+            "size": [
+              391.69999630564666,
+              412
+            ],
+            "flags": {},
+            "order": 8,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "clip",
+                "name": "clip",
+                "type": "CLIP",
+                "link": 22
+              },
+              {
+                "localized_name": "image",
+                "name": "image",
+                "shape": 7,
+                "type": "IMAGE",
+                "link": 5
+              },
+              {
+                "localized_name": "video",
+                "name": "video",
+                "shape": 7,
+                "type": "IMAGE",
+                "link": null
+              },
+              {
+                "localized_name": "audio",
+                "name": "audio",
+                "shape": 7,
+                "type": "AUDIO",
+                "link": null
+              },
+              {
+                "localized_name": "prompt",
+                "name": "prompt",
+                "type": "STRING",
+                "widget": {
+                  "name": "prompt"
+                },
+                "link": 13
+              },
+              {
+                "localized_name": "max_length",
+                "name": "max_length",
+                "type": "INT",
+                "widget": {
+                  "name": "max_length"
+                },
+                "link": 15031
+              },
+              {
+                "localized_name": "seed",
+                "name": "sampling_mode.seed",
+                "type": "INT",
+                "widget": {
+                  "name": "sampling_mode.seed"
+                },
+                "link": 20
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "generated_text",
+                "name": "generated_text",
+                "type": "STRING",
+                "links": [
+                  3,
+                  18
+                ]
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.25.0",
+              "Node name for S&R": "TextGenerate"
+            },
+            "widgets_values": [
+              "",
+              2048,
+              "on",
+              0.7,
+              64,
+              0.95,
+              0.05,
+              1.05,
+              0,
+              0,
+              true,
+              true
+            ],
+            "widgets_values_named": {
+              "prompt": "",
+              "max_length": 2048,
+              "sampling_mode": "on",
+              "sampling_mode.temperature": 0.7,
+              "sampling_mode.top_k": 64,
+              "sampling_mode.top_p": 0.95,
+              "sampling_mode.min_p": 0.05,
+              "sampling_mode.repetition_penalty": 1.05,
+              "sampling_mode.seed": 0,
+              "sampling_mode.presence_penalty": 0,
+              "thinking": true,
+              "use_default_template": true
+            }
+          },
+          {
+            "id": 5761,
+            "type": "CLIPLoader",
+            "pos": [
+              470,
+              190
+            ],
+            "size": [
+              519.984375,
+              189.984375
+            ],
+            "flags": {},
+            "order": 9,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "clip_name",
+                "name": "clip_name",
+                "type": "COMBO",
+                "widget": {
+                  "name": "clip_name"
+                },
+                "link": 17
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "CLIP",
+                "name": "CLIP",
+                "type": "CLIP",
+                "links": [
+                  22
+                ]
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.25.0",
+              "Node name for S&R": "CLIPLoader",
+              "models": [
+                {
+                  "name": "qwen3vl_4b_fp8_scaled.safetensors",
+                  "url": "https://huggingface.co/Comfy-Org/Qwen3-VL/resolve/main/text_encoders/qwen3vl_4b_fp8_scaled.safetensors",
+                  "directory": "text_encoders"
+                }
+              ]
+            },
+            "widgets_values": [
+              "Qwen/Huihui-Qwen3-VL-4B-Instruct-abliterated-fp8_scaled.safetensors",
+              "ideogram4",
+              "default"
+            ],
+            "widgets_values_named": {
+              "clip_name": "Qwen/Huihui-Qwen3-VL-4B-Instruct-abliterated-fp8_scaled.safetensors",
+              "type": "ideogram4",
+              "device": "default"
+            }
+          },
+          {
+            "id": 5756,
+            "type": "StringConstantMultiline",
+            "pos": [
+              -296.9652234986447,
+              -409.3659722407666
+            ],
+            "size": [
+              549.1216565505839,
+              112
+            ],
+            "flags": {},
+            "order": 0,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+              {
+                "localized_name": "STRING",
+                "name": "STRING",
+                "type": "STRING",
+                "links": [
+                  14950
+                ]
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfyui-kjnodes",
+              "ver": "1.4.6",
+              "Node name for S&R": "StringConstantMultiline"
+            },
+            "widgets_values": [
+              "Use the image as the initial frame to create a I2VA prompt with the following subject:",
+              true
+            ],
+            "widgets_values_named": {
+              "string": "Use the image as the initial frame to create a I2VA prompt with the following subject:",
+              "strip_newlines": true
+            }
+          },
+          {
+            "id": 5765,
+            "type": "easy anythingIndexSwitch",
+            "pos": [
+              479.17679845838995,
+              -131.2690378504731
+            ],
+            "size": [
+              550.5,
+              118
+            ],
+            "flags": {},
+            "order": 11,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "value0",
+                "name": "value0",
+                "shape": 7,
+                "type": "*",
+                "link": 14950
+              },
+              {
+                "localized_name": "value1",
+                "name": "value1",
+                "shape": 7,
+                "type": "*",
+                "link": 14951
+              },
+              {
+                "localized_name": "index",
+                "name": "index",
+                "type": "INT",
+                "widget": {
+                  "name": "index"
+                },
+                "link": 14949
+              },
+              {
+                "name": "value2",
+                "type": "*",
+                "link": 14952
+              },
+              {
+                "name": "value3",
+                "type": "*",
+                "link": null
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "value",
+                "name": "value",
+                "type": "*",
+                "links": [
+                  14954
+                ]
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfyui-easy-use",
+              "ver": "1.3.6",
+              "Node name for S&R": "easy anythingIndexSwitch"
+            },
+            "widgets_values": [
+              0
+            ],
+            "widgets_values_named": {
+              "index": 0
+            }
+          },
+          {
+            "id": 5764,
+            "type": "CustomCombo",
+            "pos": [
+              -15.293201541610248,
+              96.4155076040721
+            ],
+            "size": [
+              270,
+              174
+            ],
+            "flags": {},
+            "order": 10,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "choice",
+                "name": "choice",
+                "type": "COMBO",
+                "widget": {
+                  "name": "choice"
+                },
+                "link": 14953
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "STRING",
+                "name": "STRING",
+                "type": "STRING",
+                "links": null
+              },
+              {
+                "localized_name": "INDEX",
+                "name": "INDEX",
+                "type": "INT",
+                "links": [
+                  14949
+                ]
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.31.0",
+              "Node name for S&R": "CustomCombo"
+            },
+            "widgets_values": [
+              "I2VA",
+              0,
+              "I2VA",
+              "L2VA",
+              "FL2VA",
+              ""
+            ],
+            "widgets_values_named": {
+              "choice": "I2VA",
+              "index": 0,
+              "option1": "I2VA",
+              "option2": "L2VA",
+              "option3": "FL2VA",
+              "option4": ""
+            }
+          },
+          {
+            "id": 5763,
+            "type": "StringConstantMultiline",
+            "pos": [
+              -295.5586560870655,
+              -235.88267421410976
+            ],
+            "size": [
+              549.1216565505839,
+              112
+            ],
+            "flags": {},
+            "order": 1,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+              {
+                "localized_name": "STRING",
+                "name": "STRING",
+                "type": "STRING",
+                "links": [
+                  14951
+                ]
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfyui-kjnodes",
+              "ver": "1.4.6",
+              "Node name for S&R": "StringConstantMultiline"
+            },
+            "widgets_values": [
+              "Use the image as the last shot to create a L2VA prompt with the following subject:",
+              true
+            ],
+            "widgets_values_named": {
+              "string": "Use the image as the last shot to create a L2VA prompt with the following subject:",
+              "strip_newlines": true
+            }
+          },
+          {
+            "id": 5766,
+            "type": "StringConstantMultiline",
+            "pos": [
+              -294.3132015416106,
+              -73.61903785047322
+            ],
+            "size": [
+              557.3861193605013,
+              112
+            ],
+            "flags": {},
+            "order": 2,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+              {
+                "localized_name": "STRING",
+                "name": "STRING",
+                "type": "STRING",
+                "links": [
+                  14952
+                ]
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfyui-kjnodes",
+              "ver": "1.4.6",
+              "Node name for S&R": "StringConstantMultiline"
+            },
+            "widgets_values": [
+              "Use the image as a storyboard with the first and last frames to create a FL2VA prompt with the following subject:",
+              true
+            ],
+            "widgets_values_named": {
+              "string": "Use the image as a storyboard with the first and last frames to create a FL2VA prompt with the following subject:",
+              "strip_newlines": true
+            }
+          },
+          {
+            "id": 5754,
+            "type": "StringConstantMultiline",
+            "pos": [
+              484.3975037740831,
+              -568.2870171194074
+            ],
+            "size": [
+              540.7476589644083,
+              373.46649094839637
+            ],
+            "flags": {},
+            "order": 3,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+              {
+                "localized_name": "STRING",
+                "name": "STRING",
+                "type": "STRING",
+                "links": [
+                  7
+                ]
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfyui-kjnodes",
+              "ver": "1.4.6",
+              "Node name for S&R": "StringConstantMultiline"
+            },
+            "widgets_values": [
+              "# Video Prompt Writing Guide (T2VA / I2VA / FL2VA / L2VA)\n\n## 1. Task Overview\n\n- **T2VA**: Builds a complete audiovisual timeline from text.\n- **I2VA**: T2VA body + first-frame instruction + a visual path that develops forward from the first frame.\n- **FL2VA**: T2VA body + first-and-last-frame instruction + a continuous path from the first frame to the last frame.\n- **L2VA**: T2VA body + last-frame instruction + a path that converges from a plausible preceding state to the last frame.\n\n## 2. Final Prompt Structure\n\n### 2.1 Part One Is the Instruction\n\n**T2VA** has no image-alignment instruction and begins directly with the three core fields.\n\n**I2VA** always uses:\n\n```text\nFor the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n```\n\n**FL2VA** always uses:\n\n```text\nHow the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot N) aligns with the S.SS-second mark of the target video.\n```\n\n**L2VA** always uses:\n\n```text\nHow the reference pictures align with the target video — <Picture 1> (from [Shot N]) aligns with the S.SS-second mark of the target video.\n```\n\nHere, `N` is the index of the actual final shot, and `S.SS` is the effective video duration formatted to exactly two decimal places. The instruction must be the first line of the final prompt, followed by one blank line before the core fields.\n\n### 2.2 Part Two Contains the Three Core Fields\n\n```text\nintegrated_multimodal_description: [Shot 1] ...\n\noverall_soundscape: ...\n\nnon_diegetic_music: ...\n```\n\n- **integrated_multimodal_description**: Describes visuals, actions, shots, speakers, dialogue, singing, and diegetic audio along the timeline.\n- **overall_soundscape**: Summarizes ambient sound, physical action sounds, and non-verbal human sounds across the entire video.\n- **non_diegetic_music**: Describes background music that the characters cannot hear and only the audience can hear.\n\n## 3. How to Incorporate Keyframes into the Multimodal Description\n\n### 3.1 I2VA: Begin from the Image and Develop Forward\n\n`<Picture 1>` is the actual first frame of the video at 0.00 seconds and belongs to `[Shot 1]`. The description should first establish the style, subjects, composition, and scene anchors in the image, then describe the next action. Character identity, clothing, colors, key objects, and spatial relationships should remain consistent.\n\nRecommended structure: **first-frame anchor → action onset → continuous development → result or reaction**.\n\n### 3.2 FL2VA: Describe the Path Between the First and Last Frames\n\nPicture 1 is the opening, and Picture 2 is the ending. Focus on how the subject moves, how poses change, how objects are manipulated, how the composition evolves, and how the scene or lighting transitions.\n\nFL2VA generally favors a single shot so the model can interpolate continuously from the first frame to the last frame. Use multiple shots only when they are explicitly specified. The last frame must be reached by the final `[Shot N]` at the end of the video.\n\nRecommended structure: **first-frame state → observable intermediate changes → progressively narrowing differences → last-frame state**.\n\n### 3.3 L2VA: Infer the Opening and Land on the Image at the End\n\n`<Picture 1>` is the final frame of the video and belongs to the last `[Shot N]`; it does not inherently belong to Shot 1. Infer a plausible earlier state from the user's intent and the last frame, then describe how the characters, objects, camera, and scene gradually approach the reference image.\n\nRecommended structure: **plausible preceding state → explicit action and transition path → gradual convergence in the final shot → last-frame landing**.\n\n## 4. How to Write the Three Shared Core Sections\n\n### 4.1 Develop the Multimodal Description Along the Timeline\n\n`integrated_multimodal_description` is the main body of the rewritten prompt. Every detail should correspond to something visible or audible: visual style, initial composition, subject appearance and position, scene and key props, actions and reactions, shot changes, spoken language, and synchronized diegetic sound.\n\nAt the beginning of `[Shot 1]`, state the overall style and initial composition. Common styles include `Cinematic`, `live-action`, `2D-animated`, `3D CG`, `claymation`, `watercolor`, and `vintage film`. For keyframe tasks, derive the style from the reference image; for T2VA, select it from the user's text.\n\n```text\n[Shot 1] Live-action, cinematic, a medium-wide shot frames...\n```\n\n### 4.2 Shots and Cuts\n\nDo not add a timestamp to the first shot. Use sequential shot numbers for later shots, and begin each one with a strictly increasing cut time that falls within the video duration:\n\n```text\n[Shot 2] At 00:03.500, the camera cuts to...\n```\n\nFor ordinary cuts, use `the camera cuts to`, `the shot cuts to`, `the shot transitions to`, `the shot changes to`, or `the shot switches to`. When explicitly requested by the user, cross-dissolve, fade, or wipe may also be used. A cut should introduce new information about the subject, space, state, viewpoint, or time. If only the distance or a slight angle needs to change, prefer camera motion.\n\n### 4.3 Camera Motion: Motion Type + Amplitude + Speed\n\nA complete camera-motion expression has three dimensions: the **motion type** defines how the camera moves, **amplitude** defines the range of compositional change, and **speed** defines the pacing of that change. Add amplitude and speed only when they are meaningful; medium amplitude and normal speed are usually omitted.\n\n| Dimension | Available Expression | Description |\n|-|-|-|\n| Motion type | `Zoom In / Zoom Out` | The focal length changes while the camera body remains stationary |\n| Motion type | `Push In / Pull Out` | The camera moves forward / backward |\n| Motion type | `Pan Left / Pan Right` | The camera remains in place while the lens pivots horizontally |\n| Motion type | `Truck Left / Truck Right` | The camera translates horizontally |\n| Motion type | `Tilt Up / Tilt Down` | The camera remains in place while the lens pivots vertically |\n| Motion type | `Pedestal Up / Pedestal Down` | The entire camera moves upward / downward |\n| Motion type | `Arc Shot` | The camera moves in an arc around the subject |\n| Motion type | `Tracking Shot` | The camera follows a moving subject |\n| Motion type | `Static Shot` | The camera position and lens remain still |\n| Motion type | `Shake Slightly / Shake Strongly` | Slight / strong camera shake |\n| Motion type | `POV` | The subject's point of view |\n| Motion type | `Roll Clockwise / Roll Counterclockwise` | The camera rolls clockwise / counterclockwise around the lens axis |\n| Amplitude | `with small amplitude` | Small-range change |\n| Amplitude | `with large amplitude` | Large-range change |\n| Speed | `at slow speed` | Slow movement |\n| Speed | `at fast speed` | Fast movement |\n\nCamera motion should be written as a natural English action within the shot, rather than stacked as separate labels at the end of a sentence:\n\n```text\nThe camera pushes in with small amplitude at slow speed toward the folded letter in her hands.\nThe camera pans right with large amplitude at fast speed, revealing the open doorway.\nThe camera holds a static shot as the runner exits the frame.\n```\n\n### 4.4 Speakers, Dialogue, and Singing\n\nSubjects who speak, sing, or produce an off-screen human voice use stable IDs such as `(S1)` and `(S2)`. When multiple already-numbered speakers speak or sing together, use a compound ID such as `(S1,S2)`. A speaker keeps the same ID across shots; characters who never vocalize receive no speaker ID.\n\nWhen a speaker first appears, provide enough information from the visual and audio context to establish a stable identity, such as character type, age, gender, whether the person is on-screen, pitch, timbre, speaking rate, or accent. Place the speaker's identifying phrase, ID, action, and delivery outside `<d>`. Inside `<d>`, include only the language tag and the actual user-provided spoken content. Preserve every original word and punctuation mark verbatim; do not translate or rewrite them.\n\n```text\nThe young woman with a quiet, breathy voice (S1) says: <d>[English] I get off at the next station.</d>\nThe two children (S1,S2) shout together, <d>[English] Wait for us!</d>\n```\n\nFor voiceover, use the exact phrase `says in an off-screen voiceover`. Immediately after every voiceover `<d>` block, state that the corresponding on-screen character's lips remain closed:\n\n```text\nThe man (S1) says in an off-screen voiceover: <d>[English] I still remember that road.</d> while his lips remain completely closed.\n```\n\nWhen the same line of dialogue or lyrics crosses a cut, use `<scenetrans>` at the connecting points in both parts and explicitly state that the audio continues across the cut. Use `<cutoff>` when speech is truncated by the end of the video. Continuity may be expressed with `continues seamlessly across the cut`, `continues uninterrupted into the next shot`, `carries over from the previous shot`, or `remains audible across the transition`.\n\n### 4.5 On-Screen Text\n\nPlace any banner, sign, label, subtitle, or neon text that is actually visible on screen in English double quotation marks. Preserve the original text and punctuation verbatim, without translation.\n\n```text\nA red neon sign reading \"营业中\" glows above the doorway.\n```\n\n### 4.6 overall_soundscape\n\nUse 1–4 English sentences in one continuous paragraph to summarize the ambient sound, physical action sounds, and non-verbal human sounds across the full video, such as wind, rain, traffic, footsteps, fabric movement, impacts, breathing, laughter, or panting. Dialogue, singing, and diegetic music already belong in the multimodal description and should not be repeated here. Use `N/A` only when the user explicitly requests complete silence throughout the video.\n\n```text\noverall_soundscape: Steady rain taps against the café windows while low room ambience continues underneath. The entrance bell rings once, followed by wet footsteps and the soft scrape of a chair.\n```\n\n### 4.7 non_diegetic_music\n\nUse 1–3 English sentences to describe background music that the characters cannot hear and only the audience can hear. Focus on instrumentation, speed, rhythm, and dynamic changes; do not use abstract mood words or explain the emotional function of the score. Singing, instruments, radio, television, or phone music audible to the characters are diegetic events and should appear in the multimodal description. Use `N/A` when there is no non-diegetic music.\n\n```text\nnon_diegetic_music: Sparse piano notes at a slow tempo, joined by sustained low strings that gradually increase in volume before fading out.\n```\n\n## 5. Cases\n\n### Case 1: T2VA\n\nWith no reference image, construct the complete timeline directly from the text. You may add scene, character, action, and sound details that remain consistent with the user's intent.\n\n```text\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, a medium-wide shot frames a baker opening the shutters of a small street bakery before sunrise. The camera pushes in with small amplitude at slow speed as the middle-aged baker with a calm, slightly raspy voice (S1) places a fresh loaf on the wooden counter and says: <d>[English] First batch of the morning.</d> [Shot 2] At 00:05.000, the camera cuts to a close-up of steam rising from the sliced bread while the baker's final words carry over from the previous shot.\n\noverall_soundscape: Wooden shutters scrape open over a quiet street as trays clink softly inside the bakery. The doorbell rings once, followed by light footsteps and the crisp sound of bread being sliced.\n\nnon_diegetic_music: A soft acoustic-guitar pattern at a moderate tempo, joined by sparse upright-bass notes and a gentle fade at the end.\n```\n\n### Case 2: I2VA\n\nWrite the first-frame instruction first, then use the subject, composition, and scene in Picture 1 as the starting point of Shot 1 before describing how the scene continues to develop.\n\n```text\nFor the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, the young woman shown in <Picture 1> remains beside the rain-covered train window, preserving her appearance, clothing, seat position, and the carriage layout. The camera trucks right with small amplitude at slow speed as she lifts her gaze from the folded letter toward the passing city lights. Her reflection moves across the glass while the quiet, breathy young woman (S1) says: <d>[English] I get off at the next station.</d> She folds the letter along its existing crease.\n\noverall_soundscape: The train wheels produce a steady metallic rhythm beneath a low ventilation hum. Rain ticks against the window while paper rustles softly in her hands.\n\nnon_diegetic_music: Sustained cello notes at a slow tempo with widely spaced piano tones, gradually decreasing in volume.\n```\n\n### Case 3: FL2VA\n\nThe two images anchor the opening and ending respectively. The body should not repeat two static image descriptions; instead, it should supply the motion path that connects them. The following example is an eight-second single shot.\n\n```text\nHow the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 8.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, a rain-soaked cyclist begins in the position and framing established by Picture 1, holding a closed black umbrella beside a silver bicycle. The camera pulls out with small amplitude at slow speed as she releases the bicycle handle, raises the umbrella above her shoulder, and presses the runner upward until the canopy opens. Water rolls from the expanding fabric while she steps beneath it, rotates the handle into the final angle, and settles into the pose, spacing, and composition established by Picture 2 at the end of the shot.\n\noverall_soundscape: Rain falls steadily on the pavement, followed by the metallic click of the umbrella runner and the soft snap of the canopy opening. Water drips from the bicycle frame as distant traffic passes.\n\nnon_diegetic_music: N/A\n```\n\n### Case 4: L2VA\n\nThe image anchors only the final moment. First establish a compatible earlier state, then let the actions, object states, and composition gradually land on Picture 1 in the final shot. The following example is a six-second single shot.\n\n```text\nHow the reference pictures align with the target video — <Picture 1> (from [Shot 1]) aligns with the 6.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, a close shot begins with an intact drinking glass near the edge of a dark wooden table, while the same hand and sleeve visible in <Picture 1> approach from the right. The camera pushes in with small amplitude at slow speed as the fingertips strike the rim. The glass tips, falls, and hits the floor with a sharp impact; cracks spread through it as fragments slide outward. Toward the end, the moving pieces lose momentum and settle into the exact broken arrangement, hand position, camera angle, lighting, and final composition established by <Picture 1>.\n\noverall_soundscape: Fingertips tap the glass before it scrapes across the tabletop, falls, and breaks with a sharp crash. Small fragments scatter and gradually stop sliding across the floor.\n\nnon_diegetic_music: A low electronic pulse at a slow tempo, ending immediately after the glass breaks.\n```\n",
+              false
+            ],
+            "widgets_values_named": {
+              "string": "# Video Prompt Writing Guide (T2VA / I2VA / FL2VA / L2VA)\n\n## 1. Task Overview\n\n- **T2VA**: Builds a complete audiovisual timeline from text.\n- **I2VA**: T2VA body + first-frame instruction + a visual path that develops forward from the first frame.\n- **FL2VA**: T2VA body + first-and-last-frame instruction + a continuous path from the first frame to the last frame.\n- **L2VA**: T2VA body + last-frame instruction + a path that converges from a plausible preceding state to the last frame.\n\n## 2. Final Prompt Structure\n\n### 2.1 Part One Is the Instruction\n\n**T2VA** has no image-alignment instruction and begins directly with the three core fields.\n\n**I2VA** always uses:\n\n```text\nFor the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n```\n\n**FL2VA** always uses:\n\n```text\nHow the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot N) aligns with the S.SS-second mark of the target video.\n```\n\n**L2VA** always uses:\n\n```text\nHow the reference pictures align with the target video — <Picture 1> (from [Shot N]) aligns with the S.SS-second mark of the target video.\n```\n\nHere, `N` is the index of the actual final shot, and `S.SS` is the effective video duration formatted to exactly two decimal places. The instruction must be the first line of the final prompt, followed by one blank line before the core fields.\n\n### 2.2 Part Two Contains the Three Core Fields\n\n```text\nintegrated_multimodal_description: [Shot 1] ...\n\noverall_soundscape: ...\n\nnon_diegetic_music: ...\n```\n\n- **integrated_multimodal_description**: Describes visuals, actions, shots, speakers, dialogue, singing, and diegetic audio along the timeline.\n- **overall_soundscape**: Summarizes ambient sound, physical action sounds, and non-verbal human sounds across the entire video.\n- **non_diegetic_music**: Describes background music that the characters cannot hear and only the audience can hear.\n\n## 3. How to Incorporate Keyframes into the Multimodal Description\n\n### 3.1 I2VA: Begin from the Image and Develop Forward\n\n`<Picture 1>` is the actual first frame of the video at 0.00 seconds and belongs to `[Shot 1]`. The description should first establish the style, subjects, composition, and scene anchors in the image, then describe the next action. Character identity, clothing, colors, key objects, and spatial relationships should remain consistent.\n\nRecommended structure: **first-frame anchor → action onset → continuous development → result or reaction**.\n\n### 3.2 FL2VA: Describe the Path Between the First and Last Frames\n\nPicture 1 is the opening, and Picture 2 is the ending. Focus on how the subject moves, how poses change, how objects are manipulated, how the composition evolves, and how the scene or lighting transitions.\n\nFL2VA generally favors a single shot so the model can interpolate continuously from the first frame to the last frame. Use multiple shots only when they are explicitly specified. The last frame must be reached by the final `[Shot N]` at the end of the video.\n\nRecommended structure: **first-frame state → observable intermediate changes → progressively narrowing differences → last-frame state**.\n\n### 3.3 L2VA: Infer the Opening and Land on the Image at the End\n\n`<Picture 1>` is the final frame of the video and belongs to the last `[Shot N]`; it does not inherently belong to Shot 1. Infer a plausible earlier state from the user's intent and the last frame, then describe how the characters, objects, camera, and scene gradually approach the reference image.\n\nRecommended structure: **plausible preceding state → explicit action and transition path → gradual convergence in the final shot → last-frame landing**.\n\n## 4. How to Write the Three Shared Core Sections\n\n### 4.1 Develop the Multimodal Description Along the Timeline\n\n`integrated_multimodal_description` is the main body of the rewritten prompt. Every detail should correspond to something visible or audible: visual style, initial composition, subject appearance and position, scene and key props, actions and reactions, shot changes, spoken language, and synchronized diegetic sound.\n\nAt the beginning of `[Shot 1]`, state the overall style and initial composition. Common styles include `Cinematic`, `live-action`, `2D-animated`, `3D CG`, `claymation`, `watercolor`, and `vintage film`. For keyframe tasks, derive the style from the reference image; for T2VA, select it from the user's text.\n\n```text\n[Shot 1] Live-action, cinematic, a medium-wide shot frames...\n```\n\n### 4.2 Shots and Cuts\n\nDo not add a timestamp to the first shot. Use sequential shot numbers for later shots, and begin each one with a strictly increasing cut time that falls within the video duration:\n\n```text\n[Shot 2] At 00:03.500, the camera cuts to...\n```\n\nFor ordinary cuts, use `the camera cuts to`, `the shot cuts to`, `the shot transitions to`, `the shot changes to`, or `the shot switches to`. When explicitly requested by the user, cross-dissolve, fade, or wipe may also be used. A cut should introduce new information about the subject, space, state, viewpoint, or time. If only the distance or a slight angle needs to change, prefer camera motion.\n\n### 4.3 Camera Motion: Motion Type + Amplitude + Speed\n\nA complete camera-motion expression has three dimensions: the **motion type** defines how the camera moves, **amplitude** defines the range of compositional change, and **speed** defines the pacing of that change. Add amplitude and speed only when they are meaningful; medium amplitude and normal speed are usually omitted.\n\n| Dimension | Available Expression | Description |\n|-|-|-|\n| Motion type | `Zoom In / Zoom Out` | The focal length changes while the camera body remains stationary |\n| Motion type | `Push In / Pull Out` | The camera moves forward / backward |\n| Motion type | `Pan Left / Pan Right` | The camera remains in place while the lens pivots horizontally |\n| Motion type | `Truck Left / Truck Right` | The camera translates horizontally |\n| Motion type | `Tilt Up / Tilt Down` | The camera remains in place while the lens pivots vertically |\n| Motion type | `Pedestal Up / Pedestal Down` | The entire camera moves upward / downward |\n| Motion type | `Arc Shot` | The camera moves in an arc around the subject |\n| Motion type | `Tracking Shot` | The camera follows a moving subject |\n| Motion type | `Static Shot` | The camera position and lens remain still |\n| Motion type | `Shake Slightly / Shake Strongly` | Slight / strong camera shake |\n| Motion type | `POV` | The subject's point of view |\n| Motion type | `Roll Clockwise / Roll Counterclockwise` | The camera rolls clockwise / counterclockwise around the lens axis |\n| Amplitude | `with small amplitude` | Small-range change |\n| Amplitude | `with large amplitude` | Large-range change |\n| Speed | `at slow speed` | Slow movement |\n| Speed | `at fast speed` | Fast movement |\n\nCamera motion should be written as a natural English action within the shot, rather than stacked as separate labels at the end of a sentence:\n\n```text\nThe camera pushes in with small amplitude at slow speed toward the folded letter in her hands.\nThe camera pans right with large amplitude at fast speed, revealing the open doorway.\nThe camera holds a static shot as the runner exits the frame.\n```\n\n### 4.4 Speakers, Dialogue, and Singing\n\nSubjects who speak, sing, or produce an off-screen human voice use stable IDs such as `(S1)` and `(S2)`. When multiple already-numbered speakers speak or sing together, use a compound ID such as `(S1,S2)`. A speaker keeps the same ID across shots; characters who never vocalize receive no speaker ID.\n\nWhen a speaker first appears, provide enough information from the visual and audio context to establish a stable identity, such as character type, age, gender, whether the person is on-screen, pitch, timbre, speaking rate, or accent. Place the speaker's identifying phrase, ID, action, and delivery outside `<d>`. Inside `<d>`, include only the language tag and the actual user-provided spoken content. Preserve every original word and punctuation mark verbatim; do not translate or rewrite them.\n\n```text\nThe young woman with a quiet, breathy voice (S1) says: <d>[English] I get off at the next station.</d>\nThe two children (S1,S2) shout together, <d>[English] Wait for us!</d>\n```\n\nFor voiceover, use the exact phrase `says in an off-screen voiceover`. Immediately after every voiceover `<d>` block, state that the corresponding on-screen character's lips remain closed:\n\n```text\nThe man (S1) says in an off-screen voiceover: <d>[English] I still remember that road.</d> while his lips remain completely closed.\n```\n\nWhen the same line of dialogue or lyrics crosses a cut, use `<scenetrans>` at the connecting points in both parts and explicitly state that the audio continues across the cut. Use `<cutoff>` when speech is truncated by the end of the video. Continuity may be expressed with `continues seamlessly across the cut`, `continues uninterrupted into the next shot`, `carries over from the previous shot`, or `remains audible across the transition`.\n\n### 4.5 On-Screen Text\n\nPlace any banner, sign, label, subtitle, or neon text that is actually visible on screen in English double quotation marks. Preserve the original text and punctuation verbatim, without translation.\n\n```text\nA red neon sign reading \"营业中\" glows above the doorway.\n```\n\n### 4.6 overall_soundscape\n\nUse 1–4 English sentences in one continuous paragraph to summarize the ambient sound, physical action sounds, and non-verbal human sounds across the full video, such as wind, rain, traffic, footsteps, fabric movement, impacts, breathing, laughter, or panting. Dialogue, singing, and diegetic music already belong in the multimodal description and should not be repeated here. Use `N/A` only when the user explicitly requests complete silence throughout the video.\n\n```text\noverall_soundscape: Steady rain taps against the café windows while low room ambience continues underneath. The entrance bell rings once, followed by wet footsteps and the soft scrape of a chair.\n```\n\n### 4.7 non_diegetic_music\n\nUse 1–3 English sentences to describe background music that the characters cannot hear and only the audience can hear. Focus on instrumentation, speed, rhythm, and dynamic changes; do not use abstract mood words or explain the emotional function of the score. Singing, instruments, radio, television, or phone music audible to the characters are diegetic events and should appear in the multimodal description. Use `N/A` when there is no non-diegetic music.\n\n```text\nnon_diegetic_music: Sparse piano notes at a slow tempo, joined by sustained low strings that gradually increase in volume before fading out.\n```\n\n## 5. Cases\n\n### Case 1: T2VA\n\nWith no reference image, construct the complete timeline directly from the text. You may add scene, character, action, and sound details that remain consistent with the user's intent.\n\n```text\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, a medium-wide shot frames a baker opening the shutters of a small street bakery before sunrise. The camera pushes in with small amplitude at slow speed as the middle-aged baker with a calm, slightly raspy voice (S1) places a fresh loaf on the wooden counter and says: <d>[English] First batch of the morning.</d> [Shot 2] At 00:05.000, the camera cuts to a close-up of steam rising from the sliced bread while the baker's final words carry over from the previous shot.\n\noverall_soundscape: Wooden shutters scrape open over a quiet street as trays clink softly inside the bakery. The doorbell rings once, followed by light footsteps and the crisp sound of bread being sliced.\n\nnon_diegetic_music: A soft acoustic-guitar pattern at a moderate tempo, joined by sparse upright-bass notes and a gentle fade at the end.\n```\n\n### Case 2: I2VA\n\nWrite the first-frame instruction first, then use the subject, composition, and scene in Picture 1 as the starting point of Shot 1 before describing how the scene continues to develop.\n\n```text\nFor the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, the young woman shown in <Picture 1> remains beside the rain-covered train window, preserving her appearance, clothing, seat position, and the carriage layout. The camera trucks right with small amplitude at slow speed as she lifts her gaze from the folded letter toward the passing city lights. Her reflection moves across the glass while the quiet, breathy young woman (S1) says: <d>[English] I get off at the next station.</d> She folds the letter along its existing crease.\n\noverall_soundscape: The train wheels produce a steady metallic rhythm beneath a low ventilation hum. Rain ticks against the window while paper rustles softly in her hands.\n\nnon_diegetic_music: Sustained cello notes at a slow tempo with widely spaced piano tones, gradually decreasing in volume.\n```\n\n### Case 3: FL2VA\n\nThe two images anchor the opening and ending respectively. The body should not repeat two static image descriptions; instead, it should supply the motion path that connects them. The following example is an eight-second single shot.\n\n```text\nHow the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 8.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, a rain-soaked cyclist begins in the position and framing established by Picture 1, holding a closed black umbrella beside a silver bicycle. The camera pulls out with small amplitude at slow speed as she releases the bicycle handle, raises the umbrella above her shoulder, and presses the runner upward until the canopy opens. Water rolls from the expanding fabric while she steps beneath it, rotates the handle into the final angle, and settles into the pose, spacing, and composition established by Picture 2 at the end of the shot.\n\noverall_soundscape: Rain falls steadily on the pavement, followed by the metallic click of the umbrella runner and the soft snap of the canopy opening. Water drips from the bicycle frame as distant traffic passes.\n\nnon_diegetic_music: N/A\n```\n\n### Case 4: L2VA\n\nThe image anchors only the final moment. First establish a compatible earlier state, then let the actions, object states, and composition gradually land on Picture 1 in the final shot. The following example is a six-second single shot.\n\n```text\nHow the reference pictures align with the target video — <Picture 1> (from [Shot 1]) aligns with the 6.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, a close shot begins with an intact drinking glass near the edge of a dark wooden table, while the same hand and sleeve visible in <Picture 1> approach from the right. The camera pushes in with small amplitude at slow speed as the fingertips strike the rim. The glass tips, falls, and hits the floor with a sharp impact; cracks spread through it as fragments slide outward. Toward the end, the moving pieces lose momentum and settle into the exact broken arrangement, hand position, camera angle, lighting, and final composition established by <Picture 1>.\n\noverall_soundscape: Fingertips tap the glass before it scrapes across the tabletop, falls, and breaks with a sharp crash. Small fragments scatter and gradually stop sliding across the floor.\n\nnon_diegetic_music: A low electronic pulse at a slow tempo, ending immediately after the glass breaks.\n```\n",
+              "strip_newlines": false
+            }
+          },
+          {
+            "id": 5758,
+            "type": "StringConstantMultiline",
+            "pos": [
+              468.8065946831739,
+              37.51330808930656
+            ],
+            "size": [
+              550.9838466684959,
+              112
+            ],
+            "flags": {},
+            "order": 6,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "string",
+                "name": "string",
+                "type": "STRING",
+                "widget": {
+                  "name": "string"
+                },
+                "link": 15010
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "STRING",
+                "name": "STRING",
+                "type": "STRING",
+                "links": [
+                  14
+                ]
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfyui-kjnodes",
+              "ver": "1.4.6",
+              "Node name for S&R": "StringConstantMultiline"
+            },
+            "widgets_values": [
+              "",
+              true
+            ],
+            "widgets_values_named": {
+              "string": "",
+              "strip_newlines": true
+            }
+          }
+        ],
+        "groups": [],
+        "links": [
+          {
+            "id": 13,
+            "origin_id": 5755,
+            "origin_slot": 0,
+            "target_id": 5760,
+            "target_slot": 4,
+            "type": "STRING"
+          },
+          {
+            "id": 7,
+            "origin_id": 5754,
+            "origin_slot": 0,
+            "target_id": 5755,
+            "target_slot": 0,
+            "type": "STRING"
+          },
+          {
+            "id": 14,
+            "origin_id": 5758,
+            "origin_slot": 0,
+            "target_id": 5755,
+            "target_slot": 2,
+            "type": "STRING"
+          },
+          {
+            "id": 3,
+            "origin_id": 5760,
+            "origin_slot": 0,
+            "target_id": 5759,
+            "target_slot": 0,
+            "type": "STRING"
+          },
+          {
+            "id": 10,
+            "origin_id": 5755,
+            "origin_slot": 0,
+            "target_id": 5757,
+            "target_slot": 0,
+            "type": "STRING"
+          },
+          {
+            "id": 5,
+            "origin_id": -10,
+            "origin_slot": 0,
+            "target_id": 5760,
+            "target_slot": 1,
+            "type": "IMAGE"
+          },
+          {
+            "id": 17,
+            "origin_id": -10,
+            "origin_slot": 2,
+            "target_id": 5761,
+            "target_slot": 0,
+            "type": "COMBO"
+          },
+          {
+            "id": 18,
+            "origin_id": 5760,
+            "origin_slot": 0,
+            "target_id": -20,
+            "target_slot": 0,
+            "type": "STRING"
+          },
+          {
+            "id": 20,
+            "origin_id": -10,
+            "origin_slot": 3,
+            "target_id": 5760,
+            "target_slot": 6,
+            "type": "INT"
+          },
+          {
+            "id": 22,
+            "origin_id": 5761,
+            "origin_slot": 0,
+            "target_id": 5760,
+            "target_slot": 0,
+            "type": "CLIP"
+          },
+          {
+            "id": 14949,
+            "origin_id": 5764,
+            "origin_slot": 1,
+            "target_id": 5765,
+            "target_slot": 2,
+            "type": "INT"
+          },
+          {
+            "id": 14950,
+            "origin_id": 5756,
+            "origin_slot": 0,
+            "target_id": 5765,
+            "target_slot": 0,
+            "type": "STRING"
+          },
+          {
+            "id": 14951,
+            "origin_id": 5763,
+            "origin_slot": 0,
+            "target_id": 5765,
+            "target_slot": 1,
+            "type": "STRING"
+          },
+          {
+            "id": 14952,
+            "origin_id": 5766,
+            "origin_slot": 0,
+            "target_id": 5765,
+            "target_slot": 3,
+            "type": "STRING"
+          },
+          {
+            "id": 14953,
+            "origin_id": -10,
+            "origin_slot": 4,
+            "target_id": 5764,
+            "target_slot": 0,
+            "type": "COMBO"
+          },
+          {
+            "id": 14954,
+            "origin_id": 5765,
+            "origin_slot": 0,
+            "target_id": 5755,
+            "target_slot": 1,
+            "type": "STRING"
+          },
+          {
+            "id": 15010,
+            "origin_id": -10,
+            "origin_slot": 1,
+            "target_id": 5758,
+            "target_slot": 0,
+            "type": "STRING"
+          },
+          {
+            "id": 15031,
+            "origin_id": -10,
+            "origin_slot": 5,
+            "target_id": 5760,
+            "target_slot": 5,
+            "type": "INT"
+          }
+        ],
+        "extra": {}
+      },
+      {
+        "id": "4536a3cd-6702-4695-812b-f2550ef24d4f",
+        "version": 1,
+        "state": {
+          "lastGroupId": 159,
+          "lastNodeId": 5839,
+          "lastLinkId": 15043,
+          "lastRerouteId": 57
+        },
+        "revision": 0,
+        "config": {},
+        "name": "T2VA Prompt Generator",
+        "inputNode": {
+          "id": -10,
+          "bounding": [
+            257.26058219560804,
+            282.3223597528591,
+            128,
+            128
+          ]
+        },
+        "outputNode": {
+          "id": -20,
+          "bounding": [
+            2273.8182375638326,
+            86.3234572529779,
+            132.568359375,
+            68
+          ]
+        },
+        "inputs": [
+          {
+            "id": "b181dd05-a34b-4581-9fc1-1be0c5075781",
+            "name": "string",
+            "type": "STRING",
+            "linkIds": [
+              15032
+            ],
+            "pos": [
+              361.26058219560804,
+              306.3223597528591
+            ]
+          },
+          {
+            "id": "08bff901-2080-45d2-83cf-bf245bc6beb9",
+            "name": "value",
+            "type": "INT",
+            "linkIds": [
+              25
+            ],
+            "label": "seed",
+            "pos": [
+              361.26058219560804,
+              326.3223597528591
+            ]
+          },
+          {
+            "id": "aa6f6142-7712-4522-9aca-930531b1f676",
+            "name": "clip_name_1",
+            "type": "COMBO",
+            "linkIds": [
+              29
+            ],
+            "pos": [
+              361.26058219560804,
+              346.3223597528591
+            ]
+          },
+          {
+            "id": "5d303c09-3501-4846-b889-580738bd0c56",
+            "name": "max_length",
+            "type": "INT",
+            "linkIds": [
+              14957
+            ],
+            "pos": [
+              361.26058219560804,
+              366.3223597528591
+            ]
+          }
+        ],
+        "outputs": [
+          {
+            "id": "97cc8f5a-5a35-497e-905a-56d7cef16b0d",
+            "name": "generated_text",
+            "type": "STRING",
+            "linkIds": [
+              18
+            ],
+            "label": "generated_text",
+            "pos": [
+              2297.8182375638326,
+              110.3234572529779
+            ]
+          }
+        ],
+        "widgets": [],
+        "nodes": [
+          {
+            "id": 5805,
+            "type": "StringConstantMultiline",
+            "pos": [
+              485.306594683174,
+              -387.37792621031656
+            ],
+            "size": [
+              548.9294771462265,
+              204.3755818574873
+            ],
+            "flags": {},
+            "order": 0,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+              {
+                "localized_name": "STRING",
+                "name": "STRING",
+                "type": "STRING",
+                "links": [
+                  7
+                ]
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfyui-kjnodes",
+              "ver": "1.4.6",
+              "Node name for S&R": "StringConstantMultiline"
+            },
+            "widgets_values": [
+              "# Video Prompt Writing Guide (T2VA / I2VA / FL2VA / L2VA)\n\n## 1. Task Overview\n\n- **T2VA**: Builds a complete audiovisual timeline from text.\n- **I2VA**: T2VA body + first-frame instruction + a visual path that develops forward from the first frame.\n- **FL2VA**: T2VA body + first-and-last-frame instruction + a continuous path from the first frame to the last frame.\n- **L2VA**: T2VA body + last-frame instruction + a path that converges from a plausible preceding state to the last frame.\n\n## 2. Final Prompt Structure\n\n### 2.1 Part One Is the Instruction\n\n**T2VA** has no image-alignment instruction and begins directly with the three core fields.\n\n**I2VA** always uses:\n\n```text\nFor the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n```\n\n**FL2VA** always uses:\n\n```text\nHow the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot N) aligns with the S.SS-second mark of the target video.\n```\n\n**L2VA** always uses:\n\n```text\nHow the reference pictures align with the target video — <Picture 1> (from [Shot N]) aligns with the S.SS-second mark of the target video.\n```\n\nHere, `N` is the index of the actual final shot, and `S.SS` is the effective video duration formatted to exactly two decimal places. The instruction must be the first line of the final prompt, followed by one blank line before the core fields.\n\n### 2.2 Part Two Contains the Three Core Fields\n\n```text\nintegrated_multimodal_description: [Shot 1] ...\n\noverall_soundscape: ...\n\nnon_diegetic_music: ...\n```\n\n- **integrated_multimodal_description**: Describes visuals, actions, shots, speakers, dialogue, singing, and diegetic audio along the timeline.\n- **overall_soundscape**: Summarizes ambient sound, physical action sounds, and non-verbal human sounds across the entire video.\n- **non_diegetic_music**: Describes background music that the characters cannot hear and only the audience can hear.\n\n## 3. How to Incorporate Keyframes into the Multimodal Description\n\n### 3.1 I2VA: Begin from the Image and Develop Forward\n\n`<Picture 1>` is the actual first frame of the video at 0.00 seconds and belongs to `[Shot 1]`. The description should first establish the style, subjects, composition, and scene anchors in the image, then describe the next action. Character identity, clothing, colors, key objects, and spatial relationships should remain consistent.\n\nRecommended structure: **first-frame anchor → action onset → continuous development → result or reaction**.\n\n### 3.2 FL2VA: Describe the Path Between the First and Last Frames\n\nPicture 1 is the opening, and Picture 2 is the ending. Focus on how the subject moves, how poses change, how objects are manipulated, how the composition evolves, and how the scene or lighting transitions.\n\nFL2VA generally favors a single shot so the model can interpolate continuously from the first frame to the last frame. Use multiple shots only when they are explicitly specified. The last frame must be reached by the final `[Shot N]` at the end of the video.\n\nRecommended structure: **first-frame state → observable intermediate changes → progressively narrowing differences → last-frame state**.\n\n### 3.3 L2VA: Infer the Opening and Land on the Image at the End\n\n`<Picture 1>` is the final frame of the video and belongs to the last `[Shot N]`; it does not inherently belong to Shot 1. Infer a plausible earlier state from the user's intent and the last frame, then describe how the characters, objects, camera, and scene gradually approach the reference image.\n\nRecommended structure: **plausible preceding state → explicit action and transition path → gradual convergence in the final shot → last-frame landing**.\n\n## 4. How to Write the Three Shared Core Sections\n\n### 4.1 Develop the Multimodal Description Along the Timeline\n\n`integrated_multimodal_description` is the main body of the rewritten prompt. Every detail should correspond to something visible or audible: visual style, initial composition, subject appearance and position, scene and key props, actions and reactions, shot changes, spoken language, and synchronized diegetic sound.\n\nAt the beginning of `[Shot 1]`, state the overall style and initial composition. Common styles include `Cinematic`, `live-action`, `2D-animated`, `3D CG`, `claymation`, `watercolor`, and `vintage film`. For keyframe tasks, derive the style from the reference image; for T2VA, select it from the user's text.\n\n```text\n[Shot 1] Live-action, cinematic, a medium-wide shot frames...\n```\n\n### 4.2 Shots and Cuts\n\nDo not add a timestamp to the first shot. Use sequential shot numbers for later shots, and begin each one with a strictly increasing cut time that falls within the video duration:\n\n```text\n[Shot 2] At 00:03.500, the camera cuts to...\n```\n\nFor ordinary cuts, use `the camera cuts to`, `the shot cuts to`, `the shot transitions to`, `the shot changes to`, or `the shot switches to`. When explicitly requested by the user, cross-dissolve, fade, or wipe may also be used. A cut should introduce new information about the subject, space, state, viewpoint, or time. If only the distance or a slight angle needs to change, prefer camera motion.\n\n### 4.3 Camera Motion: Motion Type + Amplitude + Speed\n\nA complete camera-motion expression has three dimensions: the **motion type** defines how the camera moves, **amplitude** defines the range of compositional change, and **speed** defines the pacing of that change. Add amplitude and speed only when they are meaningful; medium amplitude and normal speed are usually omitted.\n\n| Dimension | Available Expression | Description |\n|-|-|-|\n| Motion type | `Zoom In / Zoom Out` | The focal length changes while the camera body remains stationary |\n| Motion type | `Push In / Pull Out` | The camera moves forward / backward |\n| Motion type | `Pan Left / Pan Right` | The camera remains in place while the lens pivots horizontally |\n| Motion type | `Truck Left / Truck Right` | The camera translates horizontally |\n| Motion type | `Tilt Up / Tilt Down` | The camera remains in place while the lens pivots vertically |\n| Motion type | `Pedestal Up / Pedestal Down` | The entire camera moves upward / downward |\n| Motion type | `Arc Shot` | The camera moves in an arc around the subject |\n| Motion type | `Tracking Shot` | The camera follows a moving subject |\n| Motion type | `Static Shot` | The camera position and lens remain still |\n| Motion type | `Shake Slightly / Shake Strongly` | Slight / strong camera shake |\n| Motion type | `POV` | The subject's point of view |\n| Motion type | `Roll Clockwise / Roll Counterclockwise` | The camera rolls clockwise / counterclockwise around the lens axis |\n| Amplitude | `with small amplitude` | Small-range change |\n| Amplitude | `with large amplitude` | Large-range change |\n| Speed | `at slow speed` | Slow movement |\n| Speed | `at fast speed` | Fast movement |\n\nCamera motion should be written as a natural English action within the shot, rather than stacked as separate labels at the end of a sentence:\n\n```text\nThe camera pushes in with small amplitude at slow speed toward the folded letter in her hands.\nThe camera pans right with large amplitude at fast speed, revealing the open doorway.\nThe camera holds a static shot as the runner exits the frame.\n```\n\n### 4.4 Speakers, Dialogue, and Singing\n\nSubjects who speak, sing, or produce an off-screen human voice use stable IDs such as `(S1)` and `(S2)`. When multiple already-numbered speakers speak or sing together, use a compound ID such as `(S1,S2)`. A speaker keeps the same ID across shots; characters who never vocalize receive no speaker ID.\n\nWhen a speaker first appears, provide enough information from the visual and audio context to establish a stable identity, such as character type, age, gender, whether the person is on-screen, pitch, timbre, speaking rate, or accent. Place the speaker's identifying phrase, ID, action, and delivery outside `<d>`. Inside `<d>`, include only the language tag and the actual user-provided spoken content. Preserve every original word and punctuation mark verbatim; do not translate or rewrite them.\n\n```text\nThe young woman with a quiet, breathy voice (S1) says: <d>[English] I get off at the next station.</d>\nThe two children (S1,S2) shout together, <d>[English] Wait for us!</d>\n```\n\nFor voiceover, use the exact phrase `says in an off-screen voiceover`. Immediately after every voiceover `<d>` block, state that the corresponding on-screen character's lips remain closed:\n\n```text\nThe man (S1) says in an off-screen voiceover: <d>[English] I still remember that road.</d> while his lips remain completely closed.\n```\n\nWhen the same line of dialogue or lyrics crosses a cut, use `<scenetrans>` at the connecting points in both parts and explicitly state that the audio continues across the cut. Use `<cutoff>` when speech is truncated by the end of the video. Continuity may be expressed with `continues seamlessly across the cut`, `continues uninterrupted into the next shot`, `carries over from the previous shot`, or `remains audible across the transition`.\n\n### 4.5 On-Screen Text\n\nPlace any banner, sign, label, subtitle, or neon text that is actually visible on screen in English double quotation marks. Preserve the original text and punctuation verbatim, without translation.\n\n```text\nA red neon sign reading \"营业中\" glows above the doorway.\n```\n\n### 4.6 overall_soundscape\n\nUse 1–4 English sentences in one continuous paragraph to summarize the ambient sound, physical action sounds, and non-verbal human sounds across the full video, such as wind, rain, traffic, footsteps, fabric movement, impacts, breathing, laughter, or panting. Dialogue, singing, and diegetic music already belong in the multimodal description and should not be repeated here. Use `N/A` only when the user explicitly requests complete silence throughout the video.\n\n```text\noverall_soundscape: Steady rain taps against the café windows while low room ambience continues underneath. The entrance bell rings once, followed by wet footsteps and the soft scrape of a chair.\n```\n\n### 4.7 non_diegetic_music\n\nUse 1–3 English sentences to describe background music that the characters cannot hear and only the audience can hear. Focus on instrumentation, speed, rhythm, and dynamic changes; do not use abstract mood words or explain the emotional function of the score. Singing, instruments, radio, television, or phone music audible to the characters are diegetic events and should appear in the multimodal description. Use `N/A` when there is no non-diegetic music.\n\n```text\nnon_diegetic_music: Sparse piano notes at a slow tempo, joined by sustained low strings that gradually increase in volume before fading out.\n```\n\n## 5. Cases\n\n### Case 1: T2VA\n\nWith no reference image, construct the complete timeline directly from the text. You may add scene, character, action, and sound details that remain consistent with the user's intent.\n\n```text\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, a medium-wide shot frames a baker opening the shutters of a small street bakery before sunrise. The camera pushes in with small amplitude at slow speed as the middle-aged baker with a calm, slightly raspy voice (S1) places a fresh loaf on the wooden counter and says: <d>[English] First batch of the morning.</d> [Shot 2] At 00:05.000, the camera cuts to a close-up of steam rising from the sliced bread while the baker's final words carry over from the previous shot.\n\noverall_soundscape: Wooden shutters scrape open over a quiet street as trays clink softly inside the bakery. The doorbell rings once, followed by light footsteps and the crisp sound of bread being sliced.\n\nnon_diegetic_music: A soft acoustic-guitar pattern at a moderate tempo, joined by sparse upright-bass notes and a gentle fade at the end.\n```\n\n### Case 2: I2VA\n\nWrite the first-frame instruction first, then use the subject, composition, and scene in Picture 1 as the starting point of Shot 1 before describing how the scene continues to develop.\n\n```text\nFor the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, the young woman shown in <Picture 1> remains beside the rain-covered train window, preserving her appearance, clothing, seat position, and the carriage layout. The camera trucks right with small amplitude at slow speed as she lifts her gaze from the folded letter toward the passing city lights. Her reflection moves across the glass while the quiet, breathy young woman (S1) says: <d>[English] I get off at the next station.</d> She folds the letter along its existing crease.\n\noverall_soundscape: The train wheels produce a steady metallic rhythm beneath a low ventilation hum. Rain ticks against the window while paper rustles softly in her hands.\n\nnon_diegetic_music: Sustained cello notes at a slow tempo with widely spaced piano tones, gradually decreasing in volume.\n```\n\n### Case 3: FL2VA\n\nThe two images anchor the opening and ending respectively. The body should not repeat two static image descriptions; instead, it should supply the motion path that connects them. The following example is an eight-second single shot.\n\n```text\nHow the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 8.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, a rain-soaked cyclist begins in the position and framing established by Picture 1, holding a closed black umbrella beside a silver bicycle. The camera pulls out with small amplitude at slow speed as she releases the bicycle handle, raises the umbrella above her shoulder, and presses the runner upward until the canopy opens. Water rolls from the expanding fabric while she steps beneath it, rotates the handle into the final angle, and settles into the pose, spacing, and composition established by Picture 2 at the end of the shot.\n\noverall_soundscape: Rain falls steadily on the pavement, followed by the metallic click of the umbrella runner and the soft snap of the canopy opening. Water drips from the bicycle frame as distant traffic passes.\n\nnon_diegetic_music: N/A\n```\n\n### Case 4: L2VA\n\nThe image anchors only the final moment. First establish a compatible earlier state, then let the actions, object states, and composition gradually land on Picture 1 in the final shot. The following example is a six-second single shot.\n\n```text\nHow the reference pictures align with the target video — <Picture 1> (from [Shot 1]) aligns with the 6.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, a close shot begins with an intact drinking glass near the edge of a dark wooden table, while the same hand and sleeve visible in <Picture 1> approach from the right. The camera pushes in with small amplitude at slow speed as the fingertips strike the rim. The glass tips, falls, and hits the floor with a sharp impact; cracks spread through it as fragments slide outward. Toward the end, the moving pieces lose momentum and settle into the exact broken arrangement, hand position, camera angle, lighting, and final composition established by <Picture 1>.\n\noverall_soundscape: Fingertips tap the glass before it scrapes across the tabletop, falls, and breaks with a sharp crash. Small fragments scatter and gradually stop sliding across the floor.\n\nnon_diegetic_music: A low electronic pulse at a slow tempo, ending immediately after the glass breaks.\n```\n",
+              false
+            ],
+            "widgets_values_named": {
+              "string": "# Video Prompt Writing Guide (T2VA / I2VA / FL2VA / L2VA)\n\n## 1. Task Overview\n\n- **T2VA**: Builds a complete audiovisual timeline from text.\n- **I2VA**: T2VA body + first-frame instruction + a visual path that develops forward from the first frame.\n- **FL2VA**: T2VA body + first-and-last-frame instruction + a continuous path from the first frame to the last frame.\n- **L2VA**: T2VA body + last-frame instruction + a path that converges from a plausible preceding state to the last frame.\n\n## 2. Final Prompt Structure\n\n### 2.1 Part One Is the Instruction\n\n**T2VA** has no image-alignment instruction and begins directly with the three core fields.\n\n**I2VA** always uses:\n\n```text\nFor the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n```\n\n**FL2VA** always uses:\n\n```text\nHow the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot N) aligns with the S.SS-second mark of the target video.\n```\n\n**L2VA** always uses:\n\n```text\nHow the reference pictures align with the target video — <Picture 1> (from [Shot N]) aligns with the S.SS-second mark of the target video.\n```\n\nHere, `N` is the index of the actual final shot, and `S.SS` is the effective video duration formatted to exactly two decimal places. The instruction must be the first line of the final prompt, followed by one blank line before the core fields.\n\n### 2.2 Part Two Contains the Three Core Fields\n\n```text\nintegrated_multimodal_description: [Shot 1] ...\n\noverall_soundscape: ...\n\nnon_diegetic_music: ...\n```\n\n- **integrated_multimodal_description**: Describes visuals, actions, shots, speakers, dialogue, singing, and diegetic audio along the timeline.\n- **overall_soundscape**: Summarizes ambient sound, physical action sounds, and non-verbal human sounds across the entire video.\n- **non_diegetic_music**: Describes background music that the characters cannot hear and only the audience can hear.\n\n## 3. How to Incorporate Keyframes into the Multimodal Description\n\n### 3.1 I2VA: Begin from the Image and Develop Forward\n\n`<Picture 1>` is the actual first frame of the video at 0.00 seconds and belongs to `[Shot 1]`. The description should first establish the style, subjects, composition, and scene anchors in the image, then describe the next action. Character identity, clothing, colors, key objects, and spatial relationships should remain consistent.\n\nRecommended structure: **first-frame anchor → action onset → continuous development → result or reaction**.\n\n### 3.2 FL2VA: Describe the Path Between the First and Last Frames\n\nPicture 1 is the opening, and Picture 2 is the ending. Focus on how the subject moves, how poses change, how objects are manipulated, how the composition evolves, and how the scene or lighting transitions.\n\nFL2VA generally favors a single shot so the model can interpolate continuously from the first frame to the last frame. Use multiple shots only when they are explicitly specified. The last frame must be reached by the final `[Shot N]` at the end of the video.\n\nRecommended structure: **first-frame state → observable intermediate changes → progressively narrowing differences → last-frame state**.\n\n### 3.3 L2VA: Infer the Opening and Land on the Image at the End\n\n`<Picture 1>` is the final frame of the video and belongs to the last `[Shot N]`; it does not inherently belong to Shot 1. Infer a plausible earlier state from the user's intent and the last frame, then describe how the characters, objects, camera, and scene gradually approach the reference image.\n\nRecommended structure: **plausible preceding state → explicit action and transition path → gradual convergence in the final shot → last-frame landing**.\n\n## 4. How to Write the Three Shared Core Sections\n\n### 4.1 Develop the Multimodal Description Along the Timeline\n\n`integrated_multimodal_description` is the main body of the rewritten prompt. Every detail should correspond to something visible or audible: visual style, initial composition, subject appearance and position, scene and key props, actions and reactions, shot changes, spoken language, and synchronized diegetic sound.\n\nAt the beginning of `[Shot 1]`, state the overall style and initial composition. Common styles include `Cinematic`, `live-action`, `2D-animated`, `3D CG`, `claymation`, `watercolor`, and `vintage film`. For keyframe tasks, derive the style from the reference image; for T2VA, select it from the user's text.\n\n```text\n[Shot 1] Live-action, cinematic, a medium-wide shot frames...\n```\n\n### 4.2 Shots and Cuts\n\nDo not add a timestamp to the first shot. Use sequential shot numbers for later shots, and begin each one with a strictly increasing cut time that falls within the video duration:\n\n```text\n[Shot 2] At 00:03.500, the camera cuts to...\n```\n\nFor ordinary cuts, use `the camera cuts to`, `the shot cuts to`, `the shot transitions to`, `the shot changes to`, or `the shot switches to`. When explicitly requested by the user, cross-dissolve, fade, or wipe may also be used. A cut should introduce new information about the subject, space, state, viewpoint, or time. If only the distance or a slight angle needs to change, prefer camera motion.\n\n### 4.3 Camera Motion: Motion Type + Amplitude + Speed\n\nA complete camera-motion expression has three dimensions: the **motion type** defines how the camera moves, **amplitude** defines the range of compositional change, and **speed** defines the pacing of that change. Add amplitude and speed only when they are meaningful; medium amplitude and normal speed are usually omitted.\n\n| Dimension | Available Expression | Description |\n|-|-|-|\n| Motion type | `Zoom In / Zoom Out` | The focal length changes while the camera body remains stationary |\n| Motion type | `Push In / Pull Out` | The camera moves forward / backward |\n| Motion type | `Pan Left / Pan Right` | The camera remains in place while the lens pivots horizontally |\n| Motion type | `Truck Left / Truck Right` | The camera translates horizontally |\n| Motion type | `Tilt Up / Tilt Down` | The camera remains in place while the lens pivots vertically |\n| Motion type | `Pedestal Up / Pedestal Down` | The entire camera moves upward / downward |\n| Motion type | `Arc Shot` | The camera moves in an arc around the subject |\n| Motion type | `Tracking Shot` | The camera follows a moving subject |\n| Motion type | `Static Shot` | The camera position and lens remain still |\n| Motion type | `Shake Slightly / Shake Strongly` | Slight / strong camera shake |\n| Motion type | `POV` | The subject's point of view |\n| Motion type | `Roll Clockwise / Roll Counterclockwise` | The camera rolls clockwise / counterclockwise around the lens axis |\n| Amplitude | `with small amplitude` | Small-range change |\n| Amplitude | `with large amplitude` | Large-range change |\n| Speed | `at slow speed` | Slow movement |\n| Speed | `at fast speed` | Fast movement |\n\nCamera motion should be written as a natural English action within the shot, rather than stacked as separate labels at the end of a sentence:\n\n```text\nThe camera pushes in with small amplitude at slow speed toward the folded letter in her hands.\nThe camera pans right with large amplitude at fast speed, revealing the open doorway.\nThe camera holds a static shot as the runner exits the frame.\n```\n\n### 4.4 Speakers, Dialogue, and Singing\n\nSubjects who speak, sing, or produce an off-screen human voice use stable IDs such as `(S1)` and `(S2)`. When multiple already-numbered speakers speak or sing together, use a compound ID such as `(S1,S2)`. A speaker keeps the same ID across shots; characters who never vocalize receive no speaker ID.\n\nWhen a speaker first appears, provide enough information from the visual and audio context to establish a stable identity, such as character type, age, gender, whether the person is on-screen, pitch, timbre, speaking rate, or accent. Place the speaker's identifying phrase, ID, action, and delivery outside `<d>`. Inside `<d>`, include only the language tag and the actual user-provided spoken content. Preserve every original word and punctuation mark verbatim; do not translate or rewrite them.\n\n```text\nThe young woman with a quiet, breathy voice (S1) says: <d>[English] I get off at the next station.</d>\nThe two children (S1,S2) shout together, <d>[English] Wait for us!</d>\n```\n\nFor voiceover, use the exact phrase `says in an off-screen voiceover`. Immediately after every voiceover `<d>` block, state that the corresponding on-screen character's lips remain closed:\n\n```text\nThe man (S1) says in an off-screen voiceover: <d>[English] I still remember that road.</d> while his lips remain completely closed.\n```\n\nWhen the same line of dialogue or lyrics crosses a cut, use `<scenetrans>` at the connecting points in both parts and explicitly state that the audio continues across the cut. Use `<cutoff>` when speech is truncated by the end of the video. Continuity may be expressed with `continues seamlessly across the cut`, `continues uninterrupted into the next shot`, `carries over from the previous shot`, or `remains audible across the transition`.\n\n### 4.5 On-Screen Text\n\nPlace any banner, sign, label, subtitle, or neon text that is actually visible on screen in English double quotation marks. Preserve the original text and punctuation verbatim, without translation.\n\n```text\nA red neon sign reading \"营业中\" glows above the doorway.\n```\n\n### 4.6 overall_soundscape\n\nUse 1–4 English sentences in one continuous paragraph to summarize the ambient sound, physical action sounds, and non-verbal human sounds across the full video, such as wind, rain, traffic, footsteps, fabric movement, impacts, breathing, laughter, or panting. Dialogue, singing, and diegetic music already belong in the multimodal description and should not be repeated here. Use `N/A` only when the user explicitly requests complete silence throughout the video.\n\n```text\noverall_soundscape: Steady rain taps against the café windows while low room ambience continues underneath. The entrance bell rings once, followed by wet footsteps and the soft scrape of a chair.\n```\n\n### 4.7 non_diegetic_music\n\nUse 1–3 English sentences to describe background music that the characters cannot hear and only the audience can hear. Focus on instrumentation, speed, rhythm, and dynamic changes; do not use abstract mood words or explain the emotional function of the score. Singing, instruments, radio, television, or phone music audible to the characters are diegetic events and should appear in the multimodal description. Use `N/A` when there is no non-diegetic music.\n\n```text\nnon_diegetic_music: Sparse piano notes at a slow tempo, joined by sustained low strings that gradually increase in volume before fading out.\n```\n\n## 5. Cases\n\n### Case 1: T2VA\n\nWith no reference image, construct the complete timeline directly from the text. You may add scene, character, action, and sound details that remain consistent with the user's intent.\n\n```text\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, a medium-wide shot frames a baker opening the shutters of a small street bakery before sunrise. The camera pushes in with small amplitude at slow speed as the middle-aged baker with a calm, slightly raspy voice (S1) places a fresh loaf on the wooden counter and says: <d>[English] First batch of the morning.</d> [Shot 2] At 00:05.000, the camera cuts to a close-up of steam rising from the sliced bread while the baker's final words carry over from the previous shot.\n\noverall_soundscape: Wooden shutters scrape open over a quiet street as trays clink softly inside the bakery. The doorbell rings once, followed by light footsteps and the crisp sound of bread being sliced.\n\nnon_diegetic_music: A soft acoustic-guitar pattern at a moderate tempo, joined by sparse upright-bass notes and a gentle fade at the end.\n```\n\n### Case 2: I2VA\n\nWrite the first-frame instruction first, then use the subject, composition, and scene in Picture 1 as the starting point of Shot 1 before describing how the scene continues to develop.\n\n```text\nFor the target video, at 0.00 seconds into the target video, <Picture 1> (from [Shot 1]) is fully referenced.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, the young woman shown in <Picture 1> remains beside the rain-covered train window, preserving her appearance, clothing, seat position, and the carriage layout. The camera trucks right with small amplitude at slow speed as she lifts her gaze from the folded letter toward the passing city lights. Her reflection moves across the glass while the quiet, breathy young woman (S1) says: <d>[English] I get off at the next station.</d> She folds the letter along its existing crease.\n\noverall_soundscape: The train wheels produce a steady metallic rhythm beneath a low ventilation hum. Rain ticks against the window while paper rustles softly in her hands.\n\nnon_diegetic_music: Sustained cello notes at a slow tempo with widely spaced piano tones, gradually decreasing in volume.\n```\n\n### Case 3: FL2VA\n\nThe two images anchor the opening and ending respectively. The body should not repeat two static image descriptions; instead, it should supply the motion path that connects them. The following example is an eight-second single shot.\n\n```text\nHow the reference pictures align with the target video — Picture 1 (from Shot 1) aligns with the 0.00-second mark of the target video; Picture 2 (from Shot 1) aligns with the 8.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, a rain-soaked cyclist begins in the position and framing established by Picture 1, holding a closed black umbrella beside a silver bicycle. The camera pulls out with small amplitude at slow speed as she releases the bicycle handle, raises the umbrella above her shoulder, and presses the runner upward until the canopy opens. Water rolls from the expanding fabric while she steps beneath it, rotates the handle into the final angle, and settles into the pose, spacing, and composition established by Picture 2 at the end of the shot.\n\noverall_soundscape: Rain falls steadily on the pavement, followed by the metallic click of the umbrella runner and the soft snap of the canopy opening. Water drips from the bicycle frame as distant traffic passes.\n\nnon_diegetic_music: N/A\n```\n\n### Case 4: L2VA\n\nThe image anchors only the final moment. First establish a compatible earlier state, then let the actions, object states, and composition gradually land on Picture 1 in the final shot. The following example is a six-second single shot.\n\n```text\nHow the reference pictures align with the target video — <Picture 1> (from [Shot 1]) aligns with the 6.00-second mark of the target video.\n\nintegrated_multimodal_description: [Shot 1] Live-action, cinematic, a close shot begins with an intact drinking glass near the edge of a dark wooden table, while the same hand and sleeve visible in <Picture 1> approach from the right. The camera pushes in with small amplitude at slow speed as the fingertips strike the rim. The glass tips, falls, and hits the floor with a sharp impact; cracks spread through it as fragments slide outward. Toward the end, the moving pieces lose momentum and settle into the exact broken arrangement, hand position, camera angle, lighting, and final composition established by <Picture 1>.\n\noverall_soundscape: Fingertips tap the glass before it scrapes across the tabletop, falls, and breaks with a sharp crash. Small fragments scatter and gradually stop sliding across the floor.\n\nnon_diegetic_music: A low electronic pulse at a slow tempo, ending immediately after the glass breaks.\n```\n",
+              "strip_newlines": false
+            }
+          },
+          {
+            "id": 5806,
+            "type": "JoinStringMulti",
+            "pos": [
+              1176.6024772403248,
+              -98.75240622507145
+            ],
+            "size": [
+              270,
+              170
+            ],
+            "flags": {},
+            "order": 2,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "string_1",
+                "name": "string_1",
+                "type": "STRING",
+                "link": 7
+              },
+              {
+                "localized_name": "string_2",
+                "name": "string_2",
+                "shape": 7,
+                "type": "STRING",
+                "link": 12
+              },
+              {
+                "name": "string_3",
+                "shape": 7,
+                "type": "STRING",
+                "link": 14
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "string",
+                "name": "string",
+                "type": "STRING",
+                "links": [
+                  10,
+                  13
+                ]
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfyui-kjnodes",
+              "ver": "1.4.6",
+              "Node name for S&R": "JoinStringMulti"
+            },
+            "widgets_values": [
+              3,
+              " ",
+              false,
+              null
+            ],
+            "widgets_values_named": {
+              "inputcount": 3,
+              "delimiter": " ",
+              "return_list": false,
+              "Update inputs": null
+            }
+          },
+          {
+            "id": 5807,
+            "type": "PreviewAny",
+            "pos": [
+              1633.5580538985755,
+              -75.69882442291951
+            ],
+            "size": [
+              549.441056437433,
+              122
+            ],
+            "flags": {},
+            "order": 3,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "source",
+                "name": "source",
+                "type": "*",
+                "link": 10
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "STRING",
+                "name": "STRING",
+                "type": "STRING",
+                "links": null
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.30.0",
+              "Node name for S&R": "PreviewAny"
+            },
+            "widgets_values": [],
+            "widgets_values_named": {}
+          },
+          {
+            "id": 5809,
+            "type": "PreviewAny",
+            "pos": [
+              1610,
+              190
+            ],
+            "size": [
+              589.984375,
+              559.984375
+            ],
+            "flags": {},
+            "order": 5,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "source",
+                "name": "source",
+                "type": "*",
+                "link": 3
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "STRING",
+                "name": "STRING",
+                "type": "STRING",
+                "links": null
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.25.0",
+              "Node name for S&R": "PreviewAny"
+            },
+            "widgets_values": [],
+            "widgets_values_named": {}
+          },
+          {
+            "id": 5810,
+            "type": "StringConstantMultiline",
+            "pos": [
+              485.306594683174,
+              -121.95233587713025
+            ],
+            "size": [
+              549.1216565505839,
+              112
+            ],
+            "flags": {},
+            "order": 1,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+              {
+                "localized_name": "STRING",
+                "name": "STRING",
+                "type": "STRING",
+                "links": [
+                  12
+                ]
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfyui-kjnodes",
+              "ver": "1.4.6",
+              "Node name for S&R": "StringConstantMultiline"
+            },
+            "widgets_values": [
+              "Create a T2VA prompt with the following subject:",
+              true
+            ],
+            "widgets_values_named": {
+              "string": "Create a T2VA prompt with the following subject:",
+              "strip_newlines": true
+            }
+          },
+          {
+            "id": 5811,
+            "type": "CLIPLoader",
+            "pos": [
+              489.4542355296908,
+              238.94808736913572
+            ],
+            "size": [
+              521.6458825025143,
+              106
+            ],
+            "flags": {},
+            "order": 6,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "clip_name",
+                "name": "clip_name",
+                "type": "COMBO",
+                "widget": {
+                  "name": "clip_name"
+                },
+                "link": 29
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "CLIP",
+                "name": "CLIP",
+                "type": "CLIP",
+                "links": [
+                  28
+                ]
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.30.0",
+              "Node name for S&R": "CLIPLoader"
+            },
+            "widgets_values": [
+              "Qwen/Huihui-Qwen3-VL-4B-Instruct-abliterated-fp8_scaled.safetensors",
+              "ideogram4",
+              "default"
+            ],
+            "widgets_values_named": {
+              "clip_name": "Qwen/Huihui-Qwen3-VL-4B-Instruct-abliterated-fp8_scaled.safetensors",
+              "type": "ideogram4",
+              "device": "default"
+            }
+          },
+          {
+            "id": 5812,
+            "type": "TextGenerate",
+            "pos": [
+              1110,
+              190
+            ],
+            "size": [
+              391.69999630564666,
+              412
+            ],
+            "flags": {},
+            "order": 7,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "clip",
+                "name": "clip",
+                "type": "CLIP",
+                "link": 28
+              },
+              {
+                "localized_name": "image",
+                "name": "image",
+                "shape": 7,
+                "type": "IMAGE",
+                "link": null
+              },
+              {
+                "localized_name": "video",
+                "name": "video",
+                "shape": 7,
+                "type": "IMAGE",
+                "link": null
+              },
+              {
+                "localized_name": "audio",
+                "name": "audio",
+                "shape": 7,
+                "type": "AUDIO",
+                "link": null
+              },
+              {
+                "localized_name": "prompt",
+                "name": "prompt",
+                "type": "STRING",
+                "widget": {
+                  "name": "prompt"
+                },
+                "link": 13
+              },
+              {
+                "localized_name": "max_length",
+                "name": "max_length",
+                "type": "INT",
+                "widget": {
+                  "name": "max_length"
+                },
+                "link": 14957
+              },
+              {
+                "localized_name": "seed",
+                "name": "sampling_mode.seed",
+                "type": "INT",
+                "widget": {
+                  "name": "sampling_mode.seed"
+                },
+                "link": 25
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "generated_text",
+                "name": "generated_text",
+                "type": "STRING",
+                "links": [
+                  3,
+                  18
+                ]
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.25.0",
+              "Node name for S&R": "TextGenerate"
+            },
+            "widgets_values": [
+              "",
+              2048,
+              "on",
+              0.7,
+              64,
+              0.95,
+              0.05,
+              1.05,
+              0,
+              0,
+              true,
+              true
+            ],
+            "widgets_values_named": {
+              "prompt": "",
+              "max_length": 2048,
+              "sampling_mode": "on",
+              "sampling_mode.temperature": 0.7,
+              "sampling_mode.top_k": 64,
+              "sampling_mode.top_p": 0.95,
+              "sampling_mode.min_p": 0.05,
+              "sampling_mode.repetition_penalty": 1.05,
+              "sampling_mode.seed": 0,
+              "sampling_mode.presence_penalty": 0,
+              "thinking": true,
+              "use_default_template": true
+            }
+          },
+          {
+            "id": 5808,
+            "type": "StringConstantMultiline",
+            "pos": [
+              485.306594683174,
+              35.31330808930656
+            ],
+            "size": [
+              550.9838466684959,
+              112
+            ],
+            "flags": {},
+            "order": 4,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "string",
+                "name": "string",
+                "type": "STRING",
+                "widget": {
+                  "name": "string"
+                },
+                "link": 15032
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "STRING",
+                "name": "STRING",
+                "type": "STRING",
+                "links": [
+                  14
+                ]
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfyui-kjnodes",
+              "ver": "1.4.6",
+              "Node name for S&R": "StringConstantMultiline"
+            },
+            "widgets_values": [
+              "",
+              true
+            ],
+            "widgets_values_named": {
+              "string": "",
+              "strip_newlines": true
+            }
+          }
+        ],
+        "groups": [],
+        "links": [
+          {
+            "id": 13,
+            "origin_id": 5806,
+            "origin_slot": 0,
+            "target_id": 5812,
+            "target_slot": 4,
+            "type": "STRING"
+          },
+          {
+            "id": 7,
+            "origin_id": 5805,
+            "origin_slot": 0,
+            "target_id": 5806,
+            "target_slot": 0,
+            "type": "STRING"
+          },
+          {
+            "id": 12,
+            "origin_id": 5810,
+            "origin_slot": 0,
+            "target_id": 5806,
+            "target_slot": 1,
+            "type": "STRING"
+          },
+          {
+            "id": 14,
+            "origin_id": 5808,
+            "origin_slot": 0,
+            "target_id": 5806,
+            "target_slot": 2,
+            "type": "STRING"
+          },
+          {
+            "id": 3,
+            "origin_id": 5812,
+            "origin_slot": 0,
+            "target_id": 5809,
+            "target_slot": 0,
+            "type": "STRING"
+          },
+          {
+            "id": 10,
+            "origin_id": 5806,
+            "origin_slot": 0,
+            "target_id": 5807,
+            "target_slot": 0,
+            "type": "STRING"
+          },
+          {
+            "id": 18,
+            "origin_id": 5812,
+            "origin_slot": 0,
+            "target_id": -20,
+            "target_slot": 0,
+            "type": "STRING"
+          },
+          {
+            "id": 25,
+            "origin_id": -10,
+            "origin_slot": 1,
+            "target_id": 5812,
+            "target_slot": 6,
+            "type": "INT"
+          },
+          {
+            "id": 28,
+            "origin_id": 5811,
+            "origin_slot": 0,
+            "target_id": 5812,
+            "target_slot": 0,
+            "type": "CLIP"
+          },
+          {
+            "id": 29,
+            "origin_id": -10,
+            "origin_slot": 2,
+            "target_id": 5811,
+            "target_slot": 0,
+            "type": "COMBO"
+          },
+          {
+            "id": 14957,
+            "origin_id": -10,
+            "origin_slot": 3,
+            "target_id": 5812,
+            "target_slot": 5,
+            "type": "INT"
+          },
+          {
+            "id": 15032,
+            "origin_id": -10,
+            "origin_slot": 0,
+            "target_id": 5808,
+            "target_slot": 0,
+            "type": "STRING"
+          }
+        ],
+        "extra": {}
+      },
+      {
+        "id": "4e51c264-5702-47f1-820b-811e2554aafd",
+        "version": 1,
+        "state": {
+          "lastGroupId": 159,
+          "lastNodeId": 5839,
+          "lastLinkId": 15043,
+          "lastRerouteId": 57
+        },
+        "revision": 0,
+        "config": {},
+        "name": "R2VA Prompt Generator",
+        "inputNode": {
+          "id": -10,
+          "bounding": [
+            209.6896280712855,
+            296.43629083620965,
+            128,
+            168
+          ]
+        },
+        "outputNode": {
+          "id": -20,
+          "bounding": [
+            2259.984375,
+            142.30322439484178,
+            132.568359375,
+            68
+          ]
+        },
+        "inputs": [
+          {
+            "id": "b181dd05-a34b-4581-9fc1-1be0c5075781",
+            "name": "string",
+            "type": "STRING",
+            "linkIds": [
+              15042
+            ],
+            "pos": [
+              313.6896280712855,
+              320.43629083620965
+            ]
+          },
+          {
+            "id": "08bff901-2080-45d2-83cf-bf245bc6beb9",
+            "name": "value",
+            "type": "INT",
+            "linkIds": [
+              25
+            ],
+            "label": "seed",
+            "pos": [
+              313.6896280712855,
+              340.43629083620965
+            ]
+          },
+          {
+            "id": "aa6f6142-7712-4522-9aca-930531b1f676",
+            "name": "clip_name_1",
+            "type": "COMBO",
+            "linkIds": [
+              29
+            ],
+            "label": "clip",
+            "pos": [
+              313.6896280712855,
+              360.43629083620965
+            ]
+          },
+          {
+            "id": "56967876-a143-4dc0-85c1-30078e215a8e",
+            "name": "choice",
+            "type": "COMBO",
+            "linkIds": [
+              38
+            ],
+            "pos": [
+              313.6896280712855,
+              380.43629083620965
+            ]
+          },
+          {
+            "id": "1d7fe6e6-df83-4edf-9c8c-8a43df61cda8",
+            "name": "max_length",
+            "type": "INT",
+            "linkIds": [
+              39
+            ],
+            "pos": [
+              313.6896280712855,
+              400.43629083620965
+            ]
+          },
+          {
+            "id": "e098b4b6-9458-423b-9f04-c28c5aad8796",
+            "name": "image",
+            "type": "IMAGE",
+            "linkIds": [
+              46
+            ],
+            "pos": [
+              313.6896280712855,
+              420.43629083620965
+            ]
+          }
+        ],
+        "outputs": [
+          {
+            "id": "97cc8f5a-5a35-497e-905a-56d7cef16b0d",
+            "name": "generated_text",
+            "type": "STRING",
+            "linkIds": [
+              18
+            ],
+            "label": "generated_text",
+            "pos": [
+              2283.984375,
+              166.30322439484178
+            ]
+          }
+        ],
+        "widgets": [],
+        "nodes": [
+          {
+            "id": 14,
+            "type": "PreviewAny",
+            "pos": [
+              1633.5580538985755,
+              -75.69882442291951
+            ],
+            "size": [
+              549.441056437433,
+              122
+            ],
+            "flags": {},
+            "order": 6,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "source",
+                "name": "source",
+                "type": "*",
+                "link": 10
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "STRING",
+                "name": "STRING",
+                "type": "STRING",
+                "links": null
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.30.0",
+              "Node name for S&R": "PreviewAny"
+            },
+            "widgets_values": [],
+            "widgets_values_named": {}
+          },
+          {
+            "id": 23,
+            "type": "CLIPLoader",
+            "pos": [
+              489.4542355296908,
+              238.94808736913572
+            ],
+            "size": [
+              521.6458825025143,
+              106
+            ],
+            "flags": {},
+            "order": 8,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "clip_name",
+                "name": "clip_name",
+                "type": "COMBO",
+                "widget": {
+                  "name": "clip_name"
+                },
+                "link": 29
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "CLIP",
+                "name": "CLIP",
+                "type": "CLIP",
+                "links": [
+                  28
+                ]
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.30.0",
+              "Node name for S&R": "CLIPLoader"
+            },
+            "widgets_values": [
+              "Qwen/Huihui-Qwen3-VL-4B-Instruct-abliterated-fp8_scaled.safetensors",
+              "ideogram4",
+              "default"
+            ],
+            "widgets_values_named": {
+              "clip_name": "Qwen/Huihui-Qwen3-VL-4B-Instruct-abliterated-fp8_scaled.safetensors",
+              "type": "ideogram4",
+              "device": "default"
+            }
+          },
+          {
+            "id": 28,
+            "type": "CustomCombo",
+            "pos": [
+              -167.08991883250417,
+              -12.413276845363152
+            ],
+            "size": [
+              270,
+              150
+            ],
+            "flags": {},
+            "order": 9,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "choice",
+                "name": "choice",
+                "type": "COMBO",
+                "widget": {
+                  "name": "choice"
+                },
+                "link": 38
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "STRING",
+                "name": "STRING",
+                "type": "STRING",
+                "links": null
+              },
+              {
+                "localized_name": "INDEX",
+                "name": "INDEX",
+                "type": "INT",
+                "links": [
+                  34
+                ]
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.30.0",
+              "Node name for S&R": "CustomCombo"
+            },
+            "widgets_values": [
+              "from-prompt",
+              0,
+              "from-prompt",
+              "rewrite",
+              ""
+            ],
+            "widgets_values_named": {
+              "choice": "from-prompt",
+              "index": 0,
+              "option1": "from-prompt",
+              "option2": "rewrite",
+              "option3": ""
+            }
+          },
+          {
+            "id": 6,
+            "type": "TextGenerate",
+            "pos": [
+              1110,
+              190
+            ],
+            "size": [
+              391.69999630564666,
+              412
+            ],
+            "flags": {},
+            "order": 3,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "clip",
+                "name": "clip",
+                "type": "CLIP",
+                "link": 28
+              },
+              {
+                "localized_name": "image",
+                "name": "image",
+                "shape": 7,
+                "type": "IMAGE",
+                "link": 46
+              },
+              {
+                "localized_name": "video",
+                "name": "video",
+                "shape": 7,
+                "type": "IMAGE",
+                "link": null
+              },
+              {
+                "localized_name": "audio",
+                "name": "audio",
+                "shape": 7,
+                "type": "AUDIO",
+                "link": null
+              },
+              {
+                "localized_name": "prompt",
+                "name": "prompt",
+                "type": "STRING",
+                "widget": {
+                  "name": "prompt"
+                },
+                "link": 13
+              },
+              {
+                "localized_name": "max_length",
+                "name": "max_length",
+                "type": "INT",
+                "widget": {
+                  "name": "max_length"
+                },
+                "link": 39
+              },
+              {
+                "localized_name": "seed",
+                "name": "sampling_mode.seed",
+                "type": "INT",
+                "widget": {
+                  "name": "sampling_mode.seed"
+                },
+                "link": 25
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "generated_text",
+                "name": "generated_text",
+                "type": "STRING",
+                "links": [
+                  3,
+                  18
+                ]
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.25.0",
+              "Node name for S&R": "TextGenerate"
+            },
+            "widgets_values": [
+              "",
+              1024,
+              "on",
+              0.7,
+              64,
+              0.95,
+              0.05,
+              1.05,
+              0,
+              0,
+              true,
+              true
+            ],
+            "widgets_values_named": {
+              "prompt": "",
+              "max_length": 1024,
+              "sampling_mode": "on",
+              "sampling_mode.temperature": 0.7,
+              "sampling_mode.top_k": 64,
+              "sampling_mode.top_p": 0.95,
+              "sampling_mode.min_p": 0.05,
+              "sampling_mode.repetition_penalty": 1.05,
+              "sampling_mode.seed": 0,
+              "sampling_mode.presence_penalty": 0,
+              "thinking": true,
+              "use_default_template": true
+            }
+          },
+          {
+            "id": 31,
+            "type": "StringConstantMultiline",
+            "pos": [
+              -460.7855328017576,
+              -369.5640337742165
+            ],
+            "size": [
+              549.1216565505839,
+              112
+            ],
+            "flags": {},
+            "order": 0,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+              {
+                "localized_name": "STRING",
+                "name": "STRING",
+                "type": "STRING",
+                "links": [
+                  35
+                ]
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfyui-kjnodes",
+              "ver": "1.4.6",
+              "Node name for S&R": "StringConstantMultiline"
+            },
+            "widgets_values": [
+              "Create a Full-Reference Mode (R2VA) prompt with the following subjects and description:",
+              true
+            ],
+            "widgets_values_named": {
+              "string": "Create a Full-Reference Mode (R2VA) prompt with the following subjects and description:",
+              "strip_newlines": true
+            }
+          },
+          {
+            "id": 12,
+            "type": "StringConstantMultiline",
+            "pos": [
+              -451.8045516566969,
+              -189.69158366514844
+            ],
+            "size": [
+              549.1216565505839,
+              112
+            ],
+            "flags": {},
+            "order": 1,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+              {
+                "localized_name": "STRING",
+                "name": "STRING",
+                "type": "STRING",
+                "links": [
+                  36
+                ]
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfyui-kjnodes",
+              "ver": "1.4.6",
+              "Node name for S&R": "StringConstantMultiline"
+            },
+            "widgets_values": [
+              "Rewrite the following prompt to adhere to the Full-Reference Mode (R2VA) prompt guide:",
+              true
+            ],
+            "widgets_values_named": {
+              "string": "Rewrite the following prompt to adhere to the Full-Reference Mode (R2VA) prompt guide:",
+              "strip_newlines": true
+            }
+          },
+          {
+            "id": 13,
+            "type": "JoinStringMulti",
+            "pos": [
+              1176.6024772403248,
+              -98.75240622507145
+            ],
+            "size": [
+              270,
+              190
+            ],
+            "flags": {},
+            "order": 5,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "string_1",
+                "name": "string_1",
+                "type": "STRING",
+                "link": 52
+              },
+              {
+                "localized_name": "string_2",
+                "name": "string_2",
+                "shape": 7,
+                "type": "STRING",
+                "link": 53
+              },
+              {
+                "name": "string_3",
+                "shape": 7,
+                "type": "STRING",
+                "link": 54
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "string",
+                "name": "string",
+                "type": "STRING",
+                "links": [
+                  10,
+                  13
+                ]
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfyui-kjnodes",
+              "ver": "1.4.6",
+              "Node name for S&R": "JoinStringMulti"
+            },
+            "widgets_values": [
+              3,
+              " ",
+              false,
+              null
+            ],
+            "widgets_values_named": {
+              "inputcount": 3,
+              "delimiter": " ",
+              "return_list": false,
+              "Update inputs": null
+            }
+          },
+          {
+            "id": 26,
+            "type": "StringConstantMultiline",
+            "pos": [
+              413.75401140071256,
+              -835.0653237794104
+            ],
+            "size": [
+              627.8444671462267,
+              605.3925718574875
+            ],
+            "flags": {},
+            "order": 2,
+            "mode": 0,
+            "inputs": [],
+            "outputs": [
+              {
+                "localized_name": "STRING",
+                "name": "STRING",
+                "type": "STRING",
+                "links": [
+                  52
+                ]
+              }
+            ],
+            "title": "MMH3 Ref Guide",
+            "properties": {
+              "cnr_id": "comfyui-kjnodes",
+              "ver": "1.4.6",
+              "Node name for S&R": "StringConstantMultiline"
+            },
+            "widgets_values": [
+              "# Full-Reference Mode Rewrite Output Format Guide\n\nThis guide explains how rewrite outputs are organized and written in full-reference mode.\n\nWrite all six rewrite sections in English. Preserve the original language only for dialogue and lyrics inside `<d>` and for text visibly present in the scene.\n\n**Description detail:** Make `detailed_description` as detailed and explicit as possible. For each shot, clearly establish the current composition, subject appearance and position, environment and lighting, actions and state changes, camera movement, current sound, and the points where referenced content actually appears or takes effect. Avoid reducing the description to a plot summary or a list of reference relationships.\n\n> The basic formats for shots, camera movement, speakers, dialogue, and ordinary sound are shared with the Video Prompt Writing Guide (T2VA / I2VA / FL2VA / L2VA). This guide focuses on the reference labels, analysis sections, and format differences specific to full-reference mode.\n\n## 1. Overall Structure\n\nA complete rewrite output consists of six sections in the following order:\n\n| Section | Purpose |\n| --- | --- |\n| `subject_definitions` | Defines referenced content and its reference labels |\n| `summary` | Summarizes the task type, target video, and main reference relationships |\n| `retention_analysis` | Describes how referenced content is preserved, transferred, or reused |\n| `detailed_description` | Describes visuals, actions, shots, sound, and dialogue in playback order |\n| `overall_soundscape` | Summarizes ambience and physical sounds |\n| `non_diegetic_music` | Describes background music audible only to the audience |\n\n## 2. Reference Labels and Definitions (`subject_definitions`)\n\nFull-reference rewrites use four types of labels to identify the source and role of referenced content:\n\n| Label | Meaning |\n| --- | --- |\n| `<Subject N>` | Visible content abstracted from reference assets that can be reused or modified in the target video |\n| `<Picture N>` | A reference image used as a concrete target frame or shot-planning anchor |\n| `<Video N>` | A reference video that provides an editing source, continuation starting point, or whole-video temporal structure |\n| `<Audio N>` | An audio signal that is copied or referenced |\n\n> Once a reference label is assigned to a piece of content, it keeps the same meaning across `subject_definitions`, `summary`, `retention_analysis`, `detailed_description`, and the audio sections.\n\n`subject_definitions` defines each piece of referenced content that must be tracked separately later, such as a person, an environment, a source video's structure, or an audio track. Give each item its own line and explain what its label denotes, its reference role, and the main features to follow; name the corresponding source asset when its provenance needs to be made explicit. If `<Picture N>` or `<Video N>` only identifies the source of another referenced item and will not be analyzed or used separately later, cite it inside that item's definition without adding a separate line. `retention_analysis` records where each referenced item appears and whether it is fully preserved, partially preserved, transferred, or reused.\n\n### 2.1 `<Subject N>`\n\n`<Subject N>` is used for reusable visible content, including:\n\n- People, animals, or objects\n- Scenes, backgrounds, or environments\n- Clothing, props, interfaces, or visual effects\n- Styles, actions, expressions, or poses\n\nIt represents a content unit that will actually be used in the target video, rather than the source file itself. One subject may be defined by multiple reference assets, and one reference asset may provide multiple subjects.\n\n```text\n<Subject 1> is the young woman in <Picture 1>, with long dark hair, a blue cardigan, and a thin silver necklace.\n```\n\nWhen the same subject comes from multiple assets, combine the sources and state what each asset provides:\n\n```text\n<Subject 1> is the woman whose appearance comes from <Picture 1> and whose walking motion comes from <Video 1>.\n```\n\n### 2.2 `<Picture N>`\n\nUse a standalone `<Picture N>` when the reference image itself serves as a shot's first frame, keyframe, last frame, edited keyframe, or composition anchor:\n\n```text\n<Picture 2> is the first frame of [Shot 1], showing a woman seated beside a café window.\n```\n\nIf an image is used only to define a character, scene, costume, or style, do not create a standalone picture entry. Instead, cite the image source inside the corresponding `<Subject N>` definition.\n\nWhen an image acts as a storyboard or shot-planning reference, state which shots it maps to and what planning information it provides:\n\n```text\n<Picture 3> is a storyboard reference for [Shot 1] and [Shot 2], defining their viewpoint, subject placement, and shot order.\n```\n\n### 2.3 `<Video N>`\n\n`<Video N>` is reserved for whole-video relationships, such as:\n\n- Editing an original video\n- Continuing from the end of an original video\n- Referencing the original video's camera movement, cuts, rhythm, or temporal structure\n\n```text\n<Video 1> is the source video for the target video edit.\n```\n\nIf a person, object, scene, action, or effect from a reference video is reused as visible content, it still belongs under `<Subject N>`. `<Video N>` identifies the asset or structural source and does not replace subject labels.\n\n### 2.4 `<Audio N>`\n\n`<Audio N>` represents a standalone audio asset or an enabled synchronized audio track from a reference video. Common uses include:\n\n- Copying all or part of an audio signal\n- Referencing a background-music style\n- Referencing a speaker's voice timbre and delivery\n- Using dialogue, lyrics, or sound effects from the original audio\n- Referencing beat, rhythm, or audio continuity\n\nWhen an `<Audio N>` explicitly corresponds to a target speaker, reuse that speaker's global ID in the definition: write `<Subject N> (Sx)` when the speaker maps to a defined subject, or use a stable voice description followed by `(Sx)` otherwise. The ID comes from the target video's global speaker order and is not independently assigned or renumbered in the audio definition. See Section 5.4 for the speaker-numbering rules:\n\n```text\n<Audio 1> is the voice-timbre reference for <Subject 1> (S1).\n```\n\nWhen one audio asset serves multiple roles, describe those roles in one natural sentence rather than creating additional subsections.\n\n### 2.5 Visual and Audio Tracks from the Same Reference Video\n\n`<Video N>` and `<Audio N>` are numbered independently. Each index indicates only the label's order within its own category and does not encode a pairing between the two categories. The same reference video may therefore correspond to `<Video 1>` and `<Audio 2>`; different indices do not prevent them from coming from the same source asset.\n\nAn ordinary reference video does not create `<Audio N>` merely because the file contains sound.\n\nAn `<Audio N>` definition primarily states the audio's role and does not have to name the `<Video N>` it comes from. State the shared source only when needed to remove provenance ambiguity, for example:\n\n```text\n<Video 1> is the source video for the target video edit.\n<Audio 2> is the synchronized audio track of <Video 1> and is reused in the target video.\n```\n\n## 3. `summary`\n\nThis section uses one short English paragraph to summarize the target video and its reference relationships. It begins with a square-bracketed task-type prefix:\n\n```text\n[reference generation] ...\n[video editing + reference generation + audio reuse] ...\n```\n\nChoose task types according to the actual role each reference asset plays in the target video:\n\n| Task type | When to use it |\n| --- | --- |\n| `keyframe completion` | An image serves as the target video's first frame, keyframe, last frame, edited keyframe, or another concrete frame anchor |\n| `reference generation` | An image, video, or audio asset provides generation guidance for a character, scene, style, action, camera movement, storyboard, and so on, without serving as a concrete frame or as the source video being edited or continued |\n| `video editing` | An existing source video is directly modified; editing an image or generating between still keyframes does not belong to this type |\n| `video continuation` | New content continues, extends, resumes, or transitions from an existing source video |\n| `audio reuse` | The same audio signal is reused in full or in part |\n| `audio reference` | The audio signal is not copied directly; only its music style, timbre, dialogue or lyric content, sound-effect texture, beat, or continuity is referenced |\n\nWhen a task satisfies multiple relationships, combine the task types with ` + ` and do not repeat a type. For example, continuing from a source video while using an image as the last frame is written as `[video continuation + keyframe completion]`. Editing a source video while retaining its original audio may be written as `[video editing + audio reuse]`.\n\nThe mere presence of video or audio does not automatically create a corresponding task type. If a reference video provides only camera movement, cuts, or rhythm, it normally belongs to `reference generation`. Use `video editing` or `video continuation` only when that video is directly edited or continued.\n\nWhen editing a source video, use `audio reuse` as well if its original audio remains audible. When continuing a source video without directly copying the audio signal, use `audio reference` if the new audio only continues the original track's audible characteristics.\n\nThe summary uses the previously defined `<Subject N>`, `<Picture N>`, `<Video N>`, and `<Audio N>` labels to describe the main subjects, shot flow, and roles of the reference assets. Do not introduce new reference labels in this section.\n\nFor video-editing tasks, begin the summary after the task-type prefix with:\n\n```text\nThe target video is an edited version of <Video 1>.\n```\n\n## 4. `retention_analysis`\n\nThis section describes how each piece of referenced content is preserved, transferred, copied, or referenced in the target video. Use one line for each reference label and preserve the meaning established in `subject_definitions`.\n\n### 4.1 Visible Content\n\n`<Subject N>`, `<Picture N>`, and `<Video N>` use the following relationship markers. These markers are fixed English values in the output format:\n\n| Relationship marker | Meaning |\n| --- | --- |\n| `fully_preserved` | The defined role of the referenced content is fully preserved |\n| `partially_preserved` | The referenced content is still used, but some defined characteristics are changed or only partially retained |\n| `attribute_transfer` | Referenced characteristics are transferred to a different identifiable target subject |\n| `weak_reference` | Only broad similarity in style, category, composition, or atmosphere is retained |\n\nSubject entry:\n\n```text\n<Subject 1> (appears in [Shot 1], [Shot 3]): fully_preserved - ...\n```\n\nPicture entry:\n\n```text\n<Picture 2> ([Shot 1] first frame): fully_preserved - ...\n```\n\nVideo-structure entry:\n\n```text\n<Video 1> (cut and pacing structure): weak_reference - ...\n```\n\n### 4.2 Audio\n\n`<Audio N>` uses the following relationship markers:\n\n| Relationship marker | Meaning |\n| --- | --- |\n| `fully_copy` | The complete source audio serves as the target video's complete final audio track |\n| `partially_copy` | Only part of the timeline or selected audio layers are copied, or other sounds are added, removed, or replaced after copying |\n| `reference` | The signal is not copied directly; only timbre, rhythm, music style, dialogue content, or sound texture is referenced |\n| `weak_reference` | Only broad similarity in category or atmosphere is retained |\n\n```text\n<Audio 1>: fully_copy - <Audio 1> is reused 1:1 as the target video's complete final audio track.\n```\n\n```text\n<Audio 2>: reference - the target speaker follows <Audio 2>'s voice timbre and measured delivery without copying the original signal.\n```\n\nChoose each relationship marker only within the reference role already defined for that label in `subject_definitions`. Do not treat newly added actions, backgrounds, or plot events in the target video as losses of reference fidelity.\n\n## 5. `detailed_description`\n\nThis is the main body of a full-reference rewrite. It describes visuals, actions, sound, and dialogue shot by shot in target-video playback order and inserts reference labels where they apply.\n\n### 5.1 Basic Format\n\nThe basic format follows the Video Prompt Writing Guide (T2VA / I2VA / FL2VA / L2VA):\n\n- Write the body in English. Preserve the original language of dialogue, lyrics, and visible text.\n- `[Shot 1]` marks the opening shot and has no timestamp. Later shots use `[Shot N] At MM:SS.mmm, ...` to mark cut times.\n- Write camera movement as natural English within the current shot, including movement type, amplitude, and speed when they need to be expressed.\n- Give vocal sources stable `(S1)`, `(S2)`, and subsequent IDs. Write dialogue and lyrics as `<d>[Language] ...</d>`.\n- Use `<scenetrans>`, `<cutoff>`, and the corresponding continuity descriptions for dialogue crossing a cut, speech truncated by the video ending, and continuous audio across shots.\n\nFor complete rules and examples covering camera vocabulary, group speech, voice-over, dialogue across cuts, and visible text, see the Video Prompt Writing Guide (T2VA / I2VA / FL2VA / L2VA).\n\n### 5.2 Full-Reference Mode Differences\n\n| Dimension | T2VA | Full-reference mode |\n| --- | --- | --- |\n| Main field | `integrated_multimodal_description` | `detailed_description` |\n| Style opening | Written after `[Shot 1]` | Established in one or two English sentences before `[Shot 1]` |\n| Reference information | Does not use full-reference labels | Inserts `<Subject N>`, `<Picture N>`, `<Video N>`, and `<Audio N>` at their first appearance and where their roles apply |\n| Audio relationships | Describes the target video's own sound | Cites `<Audio N>` in the corresponding shot or audio phase and states whether the signal is copied or referenced |\n\nOpening example:\n\n```text\nThe target video is in a cinematic, literary music-video style with soft lighting and a slightly desaturated color palette.\n[Shot 1] The scene opens in a crowded urban street...\n[Shot 2] At 00:09.000, the shot cuts to an extreme close-up...\n```\n\nFor generation tasks, `detailed_description` is normally 350-500 English words. Dialogue-dense content prioritizes fitting the complete spoken timeline rather than mechanically reaching a word count. Video-editing descriptions scale with the complexity of the source video and do not have to follow the generation-task range. A single shot does not automatically justify a shorter description; distribute detail across multiple shots according to their information load.\n\n### 5.3 Using Reference Labels in Shots\n\nAt the first clear appearance of an important `<Subject N>`, describe its referenced characteristics, position in the frame, and current action within what is actually visible in the shot. Continue using the same label in later shots without redefining what the label represents.\n\nUse natural phrasing for concrete frame anchors:\n\n```text\nthe shot begins from <Picture 1>\nthe shot's keyframe corresponds to <Picture 2>\nthe shot ends on <Picture 3>\n```\n\nWhen editing or continuing an original video, cite `<Video N>` naturally where its source state, structure, or continuation relationship applies. Cite `<Audio N>` in the shot or semantic phase where the audio relationship is active.\n\n### 5.4 Speakers, Audio Sources, and Dialogue\n\nThe basic speaker-ID and `<d>` formats follow T2VA. When a referenced subject physically speaks, retain both the visual reference label and the speaker ID:\n\n```text\n<Subject 2> (S1) turns toward the woman and says, <d>[English] Last summer, I went to my grandfather's house. He talked about you.</d>\n```\n\n`<Subject N>` identifies the referenced subject, while `(Sx)` identifies the actual speaker. When the subject speaks, write `<Subject N> (Sx)`. If the same subject speaks off-screen, keep the same form and mark it as `off-screen`. When the speaker does not correspond to a defined subject, use a stable voice description followed by `(Sx)`.\n\nWhen verbal content is only a cue within a directly reused BGM or complete soundtrack, and no person, character, narrator, or other independent vocal source physically produces it, use `<Audio N>` as the audible source and do not invent an additional `(Sx)`. If a concrete person, character, narrator, or other independent vocal source produces the voice, assign and reuse `(Sx)` for that source:\n\n```text\nWhen <Audio 1> reaches the phrase <d>[English] I'm lonely lonely lonely lonely lonely I'm lonely</d>, <Subject 1> performs the corresponding hand gesture without becoming a separate speaker source.\n```\n\nWhen dialogue, narration, or lyrics from reference audio are directly reused, or when the input prompt explicitly requests their reperformance, preserve the exact source words and original language inside `<d>`. Write `[unclear]` for unintelligible spans instead of guessing or paraphrasing them. Standardize punctuation to the basic written marks needed to express the sentence, such as `,`, `.`, `?`, and `!`; remove repeated tildes, emoji, bullets, and repeated or decorative punctuation. End complete statements, questions, and exclamations with `.`, `?`, or `!` respectively before `</d>`.\n\nWhen only timbre, rhythm, emotion, or delivery is referenced, do not carry the original dialogue from the reference audio into the target video.\n\nAssign `(Sx)` once according to the order of actual vocal events in the target video. Reuse the corresponding ID at every actual vocal event in `detailed_description`; an `<Audio N>` definition bound to a target speaker in `subject_definitions` also reuses the same `(Sx)` but never assigns a new one independently. Do not write `(Sx)` in `retention_analysis`. Verbal cues that exist only within a directly reused BGM or complete soundtrack use `<Audio N>`; voices physically produced by a concrete person, character, narrator, or other independent vocal source use `(Sx)`.\n\n## 6. `overall_soundscape` and `non_diegetic_music`\n\nThe definitions of these two sound categories follow the Video Prompt Writing Guide (T2VA / I2VA / FL2VA / L2VA).\n\n`overall_soundscape` summarizes ambience and physical sounds across the full video. Dialogue, singing, and sound events synchronized to a particular shot remain in `detailed_description`:\n\n```text\noverall_soundscape: Quiet indoor room tone and a low ventilation hum continue throughout the video.\n```\n\n`non_diegetic_music` describes background music that the characters cannot hear and that is audible only to the audience. When music is present, state its instrumentation, tempo, and dynamic development:\n\n```text\nnon_diegetic_music: A restrained solo-piano score at a slow tempo, with sustained low cello underneath and no swell.\n```\n\nWhen reference audio is used, state its copy or reference relationship only in the section that matches the audible layer: ambience and sound effects belong in `overall_soundscape`, while audience-only score belongs in `non_diegetic_music`. If the same audio provides both kinds of content, describe the corresponding relationship in each section:\n\n```text\noverall_soundscape: The copied ambience layer from <Audio 1> continues throughout the target video.\nnon_diegetic_music: <Audio 2> is directly reused as the complete audience-only score.\n```\n\nWrite complete dialogue and lyrics only inside `<d>` in `detailed_description`; do not repeat them in these two sections.\n\n### 7. Camera Motion: Motion Type + Amplitude + Speed\n\nA complete camera-motion expression has three dimensions: the **motion type** defines how the camera moves, **amplitude** defines the range of compositional change, and **speed** defines the pacing of that change. Add amplitude and speed only when they are meaningful; medium amplitude and normal speed are usually omitted.\n\n| Dimension | Available Expression | Description |\n|-|-|-|\n| Motion type | `Zoom In / Zoom Out` | The focal length changes while the camera body remains stationary |\n| Motion type | `Push In / Pull Out` | The camera moves forward / backward |\n| Motion type | `Pan Left / Pan Right` | The camera remains in place while the lens pivots horizontally |\n| Motion type | `Truck Left / Truck Right` | The camera translates horizontally |\n| Motion type | `Tilt Up / Tilt Down` | The camera remains in place while the lens pivots vertically |\n| Motion type | `Pedestal Up / Pedestal Down` | The entire camera moves upward / downward |\n| Motion type | `Arc Shot` | The camera moves in an arc around the subject |\n| Motion type | `Tracking Shot` | The camera follows a moving subject |\n| Motion type | `Static Shot` | The camera position and lens remain still |\n| Motion type | `Shake Slightly / Shake Strongly` | Slight / strong camera shake |\n| Motion type | `POV` | The subject's point of view |\n| Motion type | `Roll Clockwise / Roll Counterclockwise` | The camera rolls clockwise / counterclockwise around the lens axis |\n| Amplitude | `with small amplitude` | Small-range change |\n| Amplitude | `with large amplitude` | Large-range change |\n| Speed | `at slow speed` | Slow movement |\n| Speed | `at fast speed` | Fast movement |\n\nCamera motion should be written as a natural English action within the shot, rather than stacked as separate labels at the end of a sentence:\n\n```text\nThe camera pushes in with small amplitude at slow speed toward the folded letter in her hands.\nThe camera pans right with large amplitude at fast speed, revealing the open doorway.\nThe camera holds a static shot as the runner exits the frame.\n```\n\n## 8. Complete Example\n\n<details>\n<summary>Show the complete example</summary>\n\n```text\nsubject_definitions:\n<Subject 1> is the coffee-shop environment in <Picture 1>, featuring an exposed brick wall, an orange tufted sofa with patterned pillows, a neon sign, and a wooden coffee table.\n<Subject 2> is the fluffy white Samoyed in <Picture 2>, <Picture 3>, and <Picture 4>, with thick white fur, pointed ears, a dark nose, and a curved tail.\n<Subject 3> is the young blonde woman in <Video 1>, with long blonde hair and a light-pink button-down shirt with rolled-up sleeves.\n<Subject 4> is the young man in <Video 2>, with short wavy brown hair and a dark-grey hoodie with drawstrings.\n<Audio 1> is the voice-timbre reference for <Subject 3> (S1), containing a spoken English vocal layer.\n\nsummary:\n[reference generation + audio reference] The target video shows <Subject 3> eating a cookie in <Subject 1>. <Subject 4> enters with <Subject 2>, which lunges toward the cookie. The three-shot exchange uses <Audio 1> as the voice-timbre reference for <Subject 3> and ends with a canned audience laugh.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1], [Shot 2], [Shot 3]): fully_preserved - the exposed brick wall, orange tufted sofa, patterned pillows, neon sign, and wooden coffee table are retained.\n<Subject 2> (appears in [Shot 1], [Shot 2]): fully_preserved - the Samoyed's thick white fur, pointed ears, dark nose, and curved tail are retained.\n<Subject 3> (appears in [Shot 1], [Shot 2], [Shot 3]): fully_preserved - the blonde woman's identity, long hair, and light-pink shirt are retained.\n<Subject 4> (appears in [Shot 1], [Shot 2]): fully_preserved - the young man's short wavy brown hair and dark-grey hoodie are retained.\n<Audio 1>: reference - its vocal timbre guides the dialogue delivery of <Subject 3> without copying the original signal.\n\ndetailed_description:\nThe target video uses a realistic multi-camera sitcom style with warm indoor lighting.\n[Shot 1] A medium shot establishes <Subject 1>, the coffee shop with its exposed brick wall, orange tufted sofa, patterned pillows, neon sign, and wooden coffee table. <Subject 3> (S1), the young woman with long blonde hair and a light-pink button-down shirt with rolled-up sleeves, sits on the sofa holding a chocolate-chip cookie. From the left, <Subject 4>, the young man with short wavy brown hair and a dark-grey hoodie with drawstrings, enters holding the leash of <Subject 2>, the thick-furred white Samoyed with pointed ears, a dark nose, and a curved tail. The dog lunges toward the cookie and pulls the leash taut. <Subject 3> (S1) jerks her hand back and, using the clear youthful voice timbre referenced from <Audio 1>, exclaims with light annoyance, <d>[English] Hey! Watch your dog!</d> She closes her lips and guards the cookie while <Subject 4> pulls the dog back.\n[Shot 2] At 00:03.000, the shot cuts to a close-up of <Subject 4> (S2), the young man in the dark-grey hoodie from Shot 1, sitting beside <Subject 3> on the sofa and holding <Subject 2> securely in his arms. <Subject 4> (S2) says in a casual young male voice with a playful tone and an easy conversational pace, <d>[English] He just likes cookies more than me.</d> He closes his mouth into an apologetic smile and strokes the dog's thick white fur.\n[Shot 3] At 00:05.000, the shot cuts to a close-up of <Subject 3> (S1), the blonde woman in the light-pink shirt from Shot 1. Her annoyance softens as she looks toward the Samoyed. <Subject 3> (S1) replies in the same clear youthful voice referenced from <Audio 1> with an amused cadence, <d>[English] Well, he has good taste at least.</d> She smiles and raises the cookie in a small toast-like gesture. A classic canned audience laugh begins immediately after the line and continues through the final frame.\n\noverall_soundscape:\nSoft indoor coffee-shop room tone continues throughout the scene.\n\nnon_diegetic_music:\nN/A\n```\n\n</details>\n",
+              false
+            ],
+            "widgets_values_named": {
+              "string": "# Full-Reference Mode Rewrite Output Format Guide\n\nThis guide explains how rewrite outputs are organized and written in full-reference mode.\n\nWrite all six rewrite sections in English. Preserve the original language only for dialogue and lyrics inside `<d>` and for text visibly present in the scene.\n\n**Description detail:** Make `detailed_description` as detailed and explicit as possible. For each shot, clearly establish the current composition, subject appearance and position, environment and lighting, actions and state changes, camera movement, current sound, and the points where referenced content actually appears or takes effect. Avoid reducing the description to a plot summary or a list of reference relationships.\n\n> The basic formats for shots, camera movement, speakers, dialogue, and ordinary sound are shared with the Video Prompt Writing Guide (T2VA / I2VA / FL2VA / L2VA). This guide focuses on the reference labels, analysis sections, and format differences specific to full-reference mode.\n\n## 1. Overall Structure\n\nA complete rewrite output consists of six sections in the following order:\n\n| Section | Purpose |\n| --- | --- |\n| `subject_definitions` | Defines referenced content and its reference labels |\n| `summary` | Summarizes the task type, target video, and main reference relationships |\n| `retention_analysis` | Describes how referenced content is preserved, transferred, or reused |\n| `detailed_description` | Describes visuals, actions, shots, sound, and dialogue in playback order |\n| `overall_soundscape` | Summarizes ambience and physical sounds |\n| `non_diegetic_music` | Describes background music audible only to the audience |\n\n## 2. Reference Labels and Definitions (`subject_definitions`)\n\nFull-reference rewrites use four types of labels to identify the source and role of referenced content:\n\n| Label | Meaning |\n| --- | --- |\n| `<Subject N>` | Visible content abstracted from reference assets that can be reused or modified in the target video |\n| `<Picture N>` | A reference image used as a concrete target frame or shot-planning anchor |\n| `<Video N>` | A reference video that provides an editing source, continuation starting point, or whole-video temporal structure |\n| `<Audio N>` | An audio signal that is copied or referenced |\n\n> Once a reference label is assigned to a piece of content, it keeps the same meaning across `subject_definitions`, `summary`, `retention_analysis`, `detailed_description`, and the audio sections.\n\n`subject_definitions` defines each piece of referenced content that must be tracked separately later, such as a person, an environment, a source video's structure, or an audio track. Give each item its own line and explain what its label denotes, its reference role, and the main features to follow; name the corresponding source asset when its provenance needs to be made explicit. If `<Picture N>` or `<Video N>` only identifies the source of another referenced item and will not be analyzed or used separately later, cite it inside that item's definition without adding a separate line. `retention_analysis` records where each referenced item appears and whether it is fully preserved, partially preserved, transferred, or reused.\n\n### 2.1 `<Subject N>`\n\n`<Subject N>` is used for reusable visible content, including:\n\n- People, animals, or objects\n- Scenes, backgrounds, or environments\n- Clothing, props, interfaces, or visual effects\n- Styles, actions, expressions, or poses\n\nIt represents a content unit that will actually be used in the target video, rather than the source file itself. One subject may be defined by multiple reference assets, and one reference asset may provide multiple subjects.\n\n```text\n<Subject 1> is the young woman in <Picture 1>, with long dark hair, a blue cardigan, and a thin silver necklace.\n```\n\nWhen the same subject comes from multiple assets, combine the sources and state what each asset provides:\n\n```text\n<Subject 1> is the woman whose appearance comes from <Picture 1> and whose walking motion comes from <Video 1>.\n```\n\n### 2.2 `<Picture N>`\n\nUse a standalone `<Picture N>` when the reference image itself serves as a shot's first frame, keyframe, last frame, edited keyframe, or composition anchor:\n\n```text\n<Picture 2> is the first frame of [Shot 1], showing a woman seated beside a café window.\n```\n\nIf an image is used only to define a character, scene, costume, or style, do not create a standalone picture entry. Instead, cite the image source inside the corresponding `<Subject N>` definition.\n\nWhen an image acts as a storyboard or shot-planning reference, state which shots it maps to and what planning information it provides:\n\n```text\n<Picture 3> is a storyboard reference for [Shot 1] and [Shot 2], defining their viewpoint, subject placement, and shot order.\n```\n\n### 2.3 `<Video N>`\n\n`<Video N>` is reserved for whole-video relationships, such as:\n\n- Editing an original video\n- Continuing from the end of an original video\n- Referencing the original video's camera movement, cuts, rhythm, or temporal structure\n\n```text\n<Video 1> is the source video for the target video edit.\n```\n\nIf a person, object, scene, action, or effect from a reference video is reused as visible content, it still belongs under `<Subject N>`. `<Video N>` identifies the asset or structural source and does not replace subject labels.\n\n### 2.4 `<Audio N>`\n\n`<Audio N>` represents a standalone audio asset or an enabled synchronized audio track from a reference video. Common uses include:\n\n- Copying all or part of an audio signal\n- Referencing a background-music style\n- Referencing a speaker's voice timbre and delivery\n- Using dialogue, lyrics, or sound effects from the original audio\n- Referencing beat, rhythm, or audio continuity\n\nWhen an `<Audio N>` explicitly corresponds to a target speaker, reuse that speaker's global ID in the definition: write `<Subject N> (Sx)` when the speaker maps to a defined subject, or use a stable voice description followed by `(Sx)` otherwise. The ID comes from the target video's global speaker order and is not independently assigned or renumbered in the audio definition. See Section 5.4 for the speaker-numbering rules:\n\n```text\n<Audio 1> is the voice-timbre reference for <Subject 1> (S1).\n```\n\nWhen one audio asset serves multiple roles, describe those roles in one natural sentence rather than creating additional subsections.\n\n### 2.5 Visual and Audio Tracks from the Same Reference Video\n\n`<Video N>` and `<Audio N>` are numbered independently. Each index indicates only the label's order within its own category and does not encode a pairing between the two categories. The same reference video may therefore correspond to `<Video 1>` and `<Audio 2>`; different indices do not prevent them from coming from the same source asset.\n\nAn ordinary reference video does not create `<Audio N>` merely because the file contains sound.\n\nAn `<Audio N>` definition primarily states the audio's role and does not have to name the `<Video N>` it comes from. State the shared source only when needed to remove provenance ambiguity, for example:\n\n```text\n<Video 1> is the source video for the target video edit.\n<Audio 2> is the synchronized audio track of <Video 1> and is reused in the target video.\n```\n\n## 3. `summary`\n\nThis section uses one short English paragraph to summarize the target video and its reference relationships. It begins with a square-bracketed task-type prefix:\n\n```text\n[reference generation] ...\n[video editing + reference generation + audio reuse] ...\n```\n\nChoose task types according to the actual role each reference asset plays in the target video:\n\n| Task type | When to use it |\n| --- | --- |\n| `keyframe completion` | An image serves as the target video's first frame, keyframe, last frame, edited keyframe, or another concrete frame anchor |\n| `reference generation` | An image, video, or audio asset provides generation guidance for a character, scene, style, action, camera movement, storyboard, and so on, without serving as a concrete frame or as the source video being edited or continued |\n| `video editing` | An existing source video is directly modified; editing an image or generating between still keyframes does not belong to this type |\n| `video continuation` | New content continues, extends, resumes, or transitions from an existing source video |\n| `audio reuse` | The same audio signal is reused in full or in part |\n| `audio reference` | The audio signal is not copied directly; only its music style, timbre, dialogue or lyric content, sound-effect texture, beat, or continuity is referenced |\n\nWhen a task satisfies multiple relationships, combine the task types with ` + ` and do not repeat a type. For example, continuing from a source video while using an image as the last frame is written as `[video continuation + keyframe completion]`. Editing a source video while retaining its original audio may be written as `[video editing + audio reuse]`.\n\nThe mere presence of video or audio does not automatically create a corresponding task type. If a reference video provides only camera movement, cuts, or rhythm, it normally belongs to `reference generation`. Use `video editing` or `video continuation` only when that video is directly edited or continued.\n\nWhen editing a source video, use `audio reuse` as well if its original audio remains audible. When continuing a source video without directly copying the audio signal, use `audio reference` if the new audio only continues the original track's audible characteristics.\n\nThe summary uses the previously defined `<Subject N>`, `<Picture N>`, `<Video N>`, and `<Audio N>` labels to describe the main subjects, shot flow, and roles of the reference assets. Do not introduce new reference labels in this section.\n\nFor video-editing tasks, begin the summary after the task-type prefix with:\n\n```text\nThe target video is an edited version of <Video 1>.\n```\n\n## 4. `retention_analysis`\n\nThis section describes how each piece of referenced content is preserved, transferred, copied, or referenced in the target video. Use one line for each reference label and preserve the meaning established in `subject_definitions`.\n\n### 4.1 Visible Content\n\n`<Subject N>`, `<Picture N>`, and `<Video N>` use the following relationship markers. These markers are fixed English values in the output format:\n\n| Relationship marker | Meaning |\n| --- | --- |\n| `fully_preserved` | The defined role of the referenced content is fully preserved |\n| `partially_preserved` | The referenced content is still used, but some defined characteristics are changed or only partially retained |\n| `attribute_transfer` | Referenced characteristics are transferred to a different identifiable target subject |\n| `weak_reference` | Only broad similarity in style, category, composition, or atmosphere is retained |\n\nSubject entry:\n\n```text\n<Subject 1> (appears in [Shot 1], [Shot 3]): fully_preserved - ...\n```\n\nPicture entry:\n\n```text\n<Picture 2> ([Shot 1] first frame): fully_preserved - ...\n```\n\nVideo-structure entry:\n\n```text\n<Video 1> (cut and pacing structure): weak_reference - ...\n```\n\n### 4.2 Audio\n\n`<Audio N>` uses the following relationship markers:\n\n| Relationship marker | Meaning |\n| --- | --- |\n| `fully_copy` | The complete source audio serves as the target video's complete final audio track |\n| `partially_copy` | Only part of the timeline or selected audio layers are copied, or other sounds are added, removed, or replaced after copying |\n| `reference` | The signal is not copied directly; only timbre, rhythm, music style, dialogue content, or sound texture is referenced |\n| `weak_reference` | Only broad similarity in category or atmosphere is retained |\n\n```text\n<Audio 1>: fully_copy - <Audio 1> is reused 1:1 as the target video's complete final audio track.\n```\n\n```text\n<Audio 2>: reference - the target speaker follows <Audio 2>'s voice timbre and measured delivery without copying the original signal.\n```\n\nChoose each relationship marker only within the reference role already defined for that label in `subject_definitions`. Do not treat newly added actions, backgrounds, or plot events in the target video as losses of reference fidelity.\n\n## 5. `detailed_description`\n\nThis is the main body of a full-reference rewrite. It describes visuals, actions, sound, and dialogue shot by shot in target-video playback order and inserts reference labels where they apply.\n\n### 5.1 Basic Format\n\nThe basic format follows the Video Prompt Writing Guide (T2VA / I2VA / FL2VA / L2VA):\n\n- Write the body in English. Preserve the original language of dialogue, lyrics, and visible text.\n- `[Shot 1]` marks the opening shot and has no timestamp. Later shots use `[Shot N] At MM:SS.mmm, ...` to mark cut times.\n- Write camera movement as natural English within the current shot, including movement type, amplitude, and speed when they need to be expressed.\n- Give vocal sources stable `(S1)`, `(S2)`, and subsequent IDs. Write dialogue and lyrics as `<d>[Language] ...</d>`.\n- Use `<scenetrans>`, `<cutoff>`, and the corresponding continuity descriptions for dialogue crossing a cut, speech truncated by the video ending, and continuous audio across shots.\n\nFor complete rules and examples covering camera vocabulary, group speech, voice-over, dialogue across cuts, and visible text, see the Video Prompt Writing Guide (T2VA / I2VA / FL2VA / L2VA).\n\n### 5.2 Full-Reference Mode Differences\n\n| Dimension | T2VA | Full-reference mode |\n| --- | --- | --- |\n| Main field | `integrated_multimodal_description` | `detailed_description` |\n| Style opening | Written after `[Shot 1]` | Established in one or two English sentences before `[Shot 1]` |\n| Reference information | Does not use full-reference labels | Inserts `<Subject N>`, `<Picture N>`, `<Video N>`, and `<Audio N>` at their first appearance and where their roles apply |\n| Audio relationships | Describes the target video's own sound | Cites `<Audio N>` in the corresponding shot or audio phase and states whether the signal is copied or referenced |\n\nOpening example:\n\n```text\nThe target video is in a cinematic, literary music-video style with soft lighting and a slightly desaturated color palette.\n[Shot 1] The scene opens in a crowded urban street...\n[Shot 2] At 00:09.000, the shot cuts to an extreme close-up...\n```\n\nFor generation tasks, `detailed_description` is normally 350-500 English words. Dialogue-dense content prioritizes fitting the complete spoken timeline rather than mechanically reaching a word count. Video-editing descriptions scale with the complexity of the source video and do not have to follow the generation-task range. A single shot does not automatically justify a shorter description; distribute detail across multiple shots according to their information load.\n\n### 5.3 Using Reference Labels in Shots\n\nAt the first clear appearance of an important `<Subject N>`, describe its referenced characteristics, position in the frame, and current action within what is actually visible in the shot. Continue using the same label in later shots without redefining what the label represents.\n\nUse natural phrasing for concrete frame anchors:\n\n```text\nthe shot begins from <Picture 1>\nthe shot's keyframe corresponds to <Picture 2>\nthe shot ends on <Picture 3>\n```\n\nWhen editing or continuing an original video, cite `<Video N>` naturally where its source state, structure, or continuation relationship applies. Cite `<Audio N>` in the shot or semantic phase where the audio relationship is active.\n\n### 5.4 Speakers, Audio Sources, and Dialogue\n\nThe basic speaker-ID and `<d>` formats follow T2VA. When a referenced subject physically speaks, retain both the visual reference label and the speaker ID:\n\n```text\n<Subject 2> (S1) turns toward the woman and says, <d>[English] Last summer, I went to my grandfather's house. He talked about you.</d>\n```\n\n`<Subject N>` identifies the referenced subject, while `(Sx)` identifies the actual speaker. When the subject speaks, write `<Subject N> (Sx)`. If the same subject speaks off-screen, keep the same form and mark it as `off-screen`. When the speaker does not correspond to a defined subject, use a stable voice description followed by `(Sx)`.\n\nWhen verbal content is only a cue within a directly reused BGM or complete soundtrack, and no person, character, narrator, or other independent vocal source physically produces it, use `<Audio N>` as the audible source and do not invent an additional `(Sx)`. If a concrete person, character, narrator, or other independent vocal source produces the voice, assign and reuse `(Sx)` for that source:\n\n```text\nWhen <Audio 1> reaches the phrase <d>[English] I'm lonely lonely lonely lonely lonely I'm lonely</d>, <Subject 1> performs the corresponding hand gesture without becoming a separate speaker source.\n```\n\nWhen dialogue, narration, or lyrics from reference audio are directly reused, or when the input prompt explicitly requests their reperformance, preserve the exact source words and original language inside `<d>`. Write `[unclear]` for unintelligible spans instead of guessing or paraphrasing them. Standardize punctuation to the basic written marks needed to express the sentence, such as `,`, `.`, `?`, and `!`; remove repeated tildes, emoji, bullets, and repeated or decorative punctuation. End complete statements, questions, and exclamations with `.`, `?`, or `!` respectively before `</d>`.\n\nWhen only timbre, rhythm, emotion, or delivery is referenced, do not carry the original dialogue from the reference audio into the target video.\n\nAssign `(Sx)` once according to the order of actual vocal events in the target video. Reuse the corresponding ID at every actual vocal event in `detailed_description`; an `<Audio N>` definition bound to a target speaker in `subject_definitions` also reuses the same `(Sx)` but never assigns a new one independently. Do not write `(Sx)` in `retention_analysis`. Verbal cues that exist only within a directly reused BGM or complete soundtrack use `<Audio N>`; voices physically produced by a concrete person, character, narrator, or other independent vocal source use `(Sx)`.\n\n## 6. `overall_soundscape` and `non_diegetic_music`\n\nThe definitions of these two sound categories follow the Video Prompt Writing Guide (T2VA / I2VA / FL2VA / L2VA).\n\n`overall_soundscape` summarizes ambience and physical sounds across the full video. Dialogue, singing, and sound events synchronized to a particular shot remain in `detailed_description`:\n\n```text\noverall_soundscape: Quiet indoor room tone and a low ventilation hum continue throughout the video.\n```\n\n`non_diegetic_music` describes background music that the characters cannot hear and that is audible only to the audience. When music is present, state its instrumentation, tempo, and dynamic development:\n\n```text\nnon_diegetic_music: A restrained solo-piano score at a slow tempo, with sustained low cello underneath and no swell.\n```\n\nWhen reference audio is used, state its copy or reference relationship only in the section that matches the audible layer: ambience and sound effects belong in `overall_soundscape`, while audience-only score belongs in `non_diegetic_music`. If the same audio provides both kinds of content, describe the corresponding relationship in each section:\n\n```text\noverall_soundscape: The copied ambience layer from <Audio 1> continues throughout the target video.\nnon_diegetic_music: <Audio 2> is directly reused as the complete audience-only score.\n```\n\nWrite complete dialogue and lyrics only inside `<d>` in `detailed_description`; do not repeat them in these two sections.\n\n### 7. Camera Motion: Motion Type + Amplitude + Speed\n\nA complete camera-motion expression has three dimensions: the **motion type** defines how the camera moves, **amplitude** defines the range of compositional change, and **speed** defines the pacing of that change. Add amplitude and speed only when they are meaningful; medium amplitude and normal speed are usually omitted.\n\n| Dimension | Available Expression | Description |\n|-|-|-|\n| Motion type | `Zoom In / Zoom Out` | The focal length changes while the camera body remains stationary |\n| Motion type | `Push In / Pull Out` | The camera moves forward / backward |\n| Motion type | `Pan Left / Pan Right` | The camera remains in place while the lens pivots horizontally |\n| Motion type | `Truck Left / Truck Right` | The camera translates horizontally |\n| Motion type | `Tilt Up / Tilt Down` | The camera remains in place while the lens pivots vertically |\n| Motion type | `Pedestal Up / Pedestal Down` | The entire camera moves upward / downward |\n| Motion type | `Arc Shot` | The camera moves in an arc around the subject |\n| Motion type | `Tracking Shot` | The camera follows a moving subject |\n| Motion type | `Static Shot` | The camera position and lens remain still |\n| Motion type | `Shake Slightly / Shake Strongly` | Slight / strong camera shake |\n| Motion type | `POV` | The subject's point of view |\n| Motion type | `Roll Clockwise / Roll Counterclockwise` | The camera rolls clockwise / counterclockwise around the lens axis |\n| Amplitude | `with small amplitude` | Small-range change |\n| Amplitude | `with large amplitude` | Large-range change |\n| Speed | `at slow speed` | Slow movement |\n| Speed | `at fast speed` | Fast movement |\n\nCamera motion should be written as a natural English action within the shot, rather than stacked as separate labels at the end of a sentence:\n\n```text\nThe camera pushes in with small amplitude at slow speed toward the folded letter in her hands.\nThe camera pans right with large amplitude at fast speed, revealing the open doorway.\nThe camera holds a static shot as the runner exits the frame.\n```\n\n## 8. Complete Example\n\n<details>\n<summary>Show the complete example</summary>\n\n```text\nsubject_definitions:\n<Subject 1> is the coffee-shop environment in <Picture 1>, featuring an exposed brick wall, an orange tufted sofa with patterned pillows, a neon sign, and a wooden coffee table.\n<Subject 2> is the fluffy white Samoyed in <Picture 2>, <Picture 3>, and <Picture 4>, with thick white fur, pointed ears, a dark nose, and a curved tail.\n<Subject 3> is the young blonde woman in <Video 1>, with long blonde hair and a light-pink button-down shirt with rolled-up sleeves.\n<Subject 4> is the young man in <Video 2>, with short wavy brown hair and a dark-grey hoodie with drawstrings.\n<Audio 1> is the voice-timbre reference for <Subject 3> (S1), containing a spoken English vocal layer.\n\nsummary:\n[reference generation + audio reference] The target video shows <Subject 3> eating a cookie in <Subject 1>. <Subject 4> enters with <Subject 2>, which lunges toward the cookie. The three-shot exchange uses <Audio 1> as the voice-timbre reference for <Subject 3> and ends with a canned audience laugh.\n\nretention_analysis:\n<Subject 1> (appears in [Shot 1], [Shot 2], [Shot 3]): fully_preserved - the exposed brick wall, orange tufted sofa, patterned pillows, neon sign, and wooden coffee table are retained.\n<Subject 2> (appears in [Shot 1], [Shot 2]): fully_preserved - the Samoyed's thick white fur, pointed ears, dark nose, and curved tail are retained.\n<Subject 3> (appears in [Shot 1], [Shot 2], [Shot 3]): fully_preserved - the blonde woman's identity, long hair, and light-pink shirt are retained.\n<Subject 4> (appears in [Shot 1], [Shot 2]): fully_preserved - the young man's short wavy brown hair and dark-grey hoodie are retained.\n<Audio 1>: reference - its vocal timbre guides the dialogue delivery of <Subject 3> without copying the original signal.\n\ndetailed_description:\nThe target video uses a realistic multi-camera sitcom style with warm indoor lighting.\n[Shot 1] A medium shot establishes <Subject 1>, the coffee shop with its exposed brick wall, orange tufted sofa, patterned pillows, neon sign, and wooden coffee table. <Subject 3> (S1), the young woman with long blonde hair and a light-pink button-down shirt with rolled-up sleeves, sits on the sofa holding a chocolate-chip cookie. From the left, <Subject 4>, the young man with short wavy brown hair and a dark-grey hoodie with drawstrings, enters holding the leash of <Subject 2>, the thick-furred white Samoyed with pointed ears, a dark nose, and a curved tail. The dog lunges toward the cookie and pulls the leash taut. <Subject 3> (S1) jerks her hand back and, using the clear youthful voice timbre referenced from <Audio 1>, exclaims with light annoyance, <d>[English] Hey! Watch your dog!</d> She closes her lips and guards the cookie while <Subject 4> pulls the dog back.\n[Shot 2] At 00:03.000, the shot cuts to a close-up of <Subject 4> (S2), the young man in the dark-grey hoodie from Shot 1, sitting beside <Subject 3> on the sofa and holding <Subject 2> securely in his arms. <Subject 4> (S2) says in a casual young male voice with a playful tone and an easy conversational pace, <d>[English] He just likes cookies more than me.</d> He closes his mouth into an apologetic smile and strokes the dog's thick white fur.\n[Shot 3] At 00:05.000, the shot cuts to a close-up of <Subject 3> (S1), the blonde woman in the light-pink shirt from Shot 1. Her annoyance softens as she looks toward the Samoyed. <Subject 3> (S1) replies in the same clear youthful voice referenced from <Audio 1> with an amused cadence, <d>[English] Well, he has good taste at least.</d> She smiles and raises the cookie in a small toast-like gesture. A classic canned audience laugh begins immediately after the line and continues through the final frame.\n\noverall_soundscape:\nSoft indoor coffee-shop room tone continues throughout the scene.\n\nnon_diegetic_music:\nN/A\n```\n\n</details>\n",
+              "strip_newlines": false
+            }
+          },
+          {
+            "id": 30,
+            "type": "easy anythingIndexSwitch",
+            "pos": [
+              483.608965056325,
+              -140.26208545593
+            ],
+            "size": [
+              547.3494315826001,
+              98
+            ],
+            "flags": {},
+            "order": 10,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "value0",
+                "name": "value0",
+                "shape": 7,
+                "type": "*",
+                "link": 35
+              },
+              {
+                "localized_name": "value1",
+                "name": "value1",
+                "shape": 7,
+                "type": "*",
+                "link": 36
+              },
+              {
+                "localized_name": "index",
+                "name": "index",
+                "type": "INT",
+                "widget": {
+                  "name": "index"
+                },
+                "link": 34
+              },
+              {
+                "name": "value2",
+                "type": "*",
+                "link": null
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "value",
+                "name": "value",
+                "type": "*",
+                "links": [
+                  53
+                ]
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfyui-easy-use",
+              "ver": "1.3.6",
+              "Node name for S&R": "easy anythingIndexSwitch"
+            },
+            "widgets_values": [
+              0
+            ],
+            "widgets_values_named": {
+              "index": 0
+            }
+          },
+          {
+            "id": 7,
+            "type": "PreviewAny",
+            "pos": [
+              1597.8973524218557,
+              244.0016893764846
+            ],
+            "size": [
+              589.984375,
+              559.984375
+            ],
+            "flags": {},
+            "order": 4,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "source",
+                "name": "source",
+                "type": "*",
+                "link": 3
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "STRING",
+                "name": "STRING",
+                "type": "STRING",
+                "links": null
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfy-core",
+              "ver": "0.25.0",
+              "Node name for S&R": "PreviewAny"
+            },
+            "widgets_values": [],
+            "widgets_values_named": {}
+          },
+          {
+            "id": 15,
+            "type": "StringConstantMultiline",
+            "pos": [
+              485.306594683174,
+              35.31330808930656
+            ],
+            "size": [
+              550.9838466684959,
+              112
+            ],
+            "flags": {},
+            "order": 7,
+            "mode": 0,
+            "inputs": [
+              {
+                "localized_name": "string",
+                "name": "string",
+                "type": "STRING",
+                "widget": {
+                  "name": "string"
+                },
+                "link": 15042
+              }
+            ],
+            "outputs": [
+              {
+                "localized_name": "STRING",
+                "name": "STRING",
+                "type": "STRING",
+                "links": [
+                  54
+                ]
+              }
+            ],
+            "properties": {
+              "cnr_id": "comfyui-kjnodes",
+              "ver": "1.4.6",
+              "Node name for S&R": "StringConstantMultiline"
+            },
+            "widgets_values": [
+              "",
+              true
+            ],
+            "widgets_values_named": {
+              "string": "",
+              "strip_newlines": true
+            }
+          }
+        ],
+        "groups": [],
+        "links": [
+          {
+            "id": 13,
+            "origin_id": 13,
+            "origin_slot": 0,
+            "target_id": 6,
+            "target_slot": 4,
+            "type": "STRING"
+          },
+          {
+            "id": 3,
+            "origin_id": 6,
+            "origin_slot": 0,
+            "target_id": 7,
+            "target_slot": 0,
+            "type": "STRING"
+          },
+          {
+            "id": 10,
+            "origin_id": 13,
+            "origin_slot": 0,
+            "target_id": 14,
+            "target_slot": 0,
+            "type": "STRING"
+          },
+          {
+            "id": 18,
+            "origin_id": 6,
+            "origin_slot": 0,
+            "target_id": -20,
+            "target_slot": 0,
+            "type": "STRING"
+          },
+          {
+            "id": 25,
+            "origin_id": -10,
+            "origin_slot": 1,
+            "target_id": 6,
+            "target_slot": 6,
+            "type": "INT"
+          },
+          {
+            "id": 28,
+            "origin_id": 23,
+            "origin_slot": 0,
+            "target_id": 6,
+            "target_slot": 0,
+            "type": "CLIP"
+          },
+          {
+            "id": 29,
+            "origin_id": -10,
+            "origin_slot": 2,
+            "target_id": 23,
+            "target_slot": 0,
+            "type": "COMBO"
+          },
+          {
+            "id": 34,
+            "origin_id": 28,
+            "origin_slot": 1,
+            "target_id": 30,
+            "target_slot": 2,
+            "type": "INT"
+          },
+          {
+            "id": 35,
+            "origin_id": 31,
+            "origin_slot": 0,
+            "target_id": 30,
+            "target_slot": 0,
+            "type": "STRING"
+          },
+          {
+            "id": 36,
+            "origin_id": 12,
+            "origin_slot": 0,
+            "target_id": 30,
+            "target_slot": 1,
+            "type": "STRING"
+          },
+          {
+            "id": 38,
+            "origin_id": -10,
+            "origin_slot": 3,
+            "target_id": 28,
+            "target_slot": 0,
+            "type": "COMBO"
+          },
+          {
+            "id": 39,
+            "origin_id": -10,
+            "origin_slot": 4,
+            "target_id": 6,
+            "target_slot": 5,
+            "type": "INT"
+          },
+          {
+            "id": 46,
+            "origin_id": -10,
+            "origin_slot": 5,
+            "target_id": 6,
+            "target_slot": 1,
+            "type": "IMAGE"
+          },
+          {
+            "id": 52,
+            "origin_id": 26,
+            "origin_slot": 0,
+            "target_id": 13,
+            "target_slot": 0,
+            "type": "STRING"
+          },
+          {
+            "id": 53,
+            "origin_id": 30,
+            "origin_slot": 0,
+            "target_id": 13,
+            "target_slot": 1,
+            "type": "STRING"
+          },
+          {
+            "id": 54,
+            "origin_id": 15,
+            "origin_slot": 0,
+            "target_id": 13,
+            "target_slot": 2,
+            "type": "STRING"
+          },
+          {
+            "id": 15042,
+            "origin_id": -10,
+            "origin_slot": 0,
+            "target_id": 15,
+            "target_slot": 0,
+            "type": "STRING"
+          }
+        ],
+        "extra": {}
+      }
+    ]
+  },
+  "config": {},
+  "extra": {
+    "ds": {
+      "scale": 0.5682748531815137,
+      "offset": [
+        44.081048006215894,
+        545.3605914503515
+      ]
+    },
+    "frontendVersion": "1.49.6",
+    "VHS_latentpreview": false,
+    "VHS_latentpreviewrate": 0,
+    "VHS_MetadataImage": true,
+    "VHS_KeepIntermediate": true
+  },
+  "version": 0.4
+}
