@@ -1,6 +1,11 @@
 # comfy-workflows
 
 - [comfy-workflows](#comfy-workflows)
+  - [Flux 2 Klein 9b](#flux-2-klein-9b)
+    - [F2K9b Detailer](#f2k9b-detailer)
+  - [Krea 2](#krea-2)
+    - [Krea 2 Character Composite](#krea-2-character-composite)
+    - [Krea 2 Character Sheet](#krea-2-character-sheet)
   - [Minimax H3](#minimax-h3)
     - [H3 Prompt](#h3-prompt)
       - [H3 Prompt Generators](#h3-prompt-generators)
@@ -9,6 +14,23 @@
       - [H3 Yolo Detailer](#h3-yolo-detailer)
     - [H3 Ref-to-video](#h3-ref-to-video)
       - [Product + character](#product--character)
+
+## Flux 2 Klein 9b
+### [F2K9b Detailer](Flux2Klein9b/detailer/f2k9b-i2i-detailer.json)
+Detailer to work with high resolution sources, with finer control over changed areas.
+
+![f2k9b detailer](Flux2Klein9b/detailer/f2k9b-i2i-detailer.png)
+
+## Krea 2
+### [Krea 2 Character Composite](Krea2\character-composite\krea2-i2i-character-composite.json)
+Use multiple reference characters in a scene. Uses the [identity edit lora](https://huggingface.co/conradlocke/krea2-identity-edit/blob/main/krea2_identity_edit_v1_2.safetensors).
+
+![krea2 character composite](Krea2/character-composite/krea2-i2i-character-composite.png)
+
+### [Krea 2 Character Sheet](Krea2/character-sheet/krea2-i2i-character-sheet.json)
+Character sheet generation from source image. Uses the [identity edit lora](https://huggingface.co/conradlocke/krea2-identity-edit/blob/main/krea2_identity_edit_v1_2.safetensors). Source character should be in a somewhat neutral pose, using a source with dynamic poses is likely to fail.
+
+![krea2 character sheet](Krea2/character-sheet/krea2-i2i-character-sheet.png)
 
 ## Minimax H3
 ### H3 Prompt
@@ -31,4 +53,6 @@ Improve detail of low-resolution areas: faces, text, etc. The detailers crop, re
 
 ### H3 Ref-to-video
 #### [Product + character](MinimaxH3/ref-to-video-product/)
+Example of combining a charcter with an object.
+
 <video controls src="https://github.com/user-attachments/assets/85d6339c-dc9d-47e0-97b4-4c41aba2820d" style="max-height:400px"></video>
