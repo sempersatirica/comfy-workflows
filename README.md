@@ -22,7 +22,7 @@ Detailer to work with high resolution sources, with finer control over changed a
 ![f2k9b detailer](Flux2Klein9b/detailer/f2k9b-i2i-detailer.png)
 
 ## Krea 2
-### [Krea 2 Character Composite](Krea2\character-composite\krea2-i2i-character-composite.json)
+### [Krea 2 Character Composite](Krea2/character-composite/krea2-i2i-character-composite.json)
 Use multiple reference characters in a scene. Uses the [identity edit lora](https://huggingface.co/conradlocke/krea2-identity-edit/blob/main/krea2_identity_edit_v1_2.safetensors).
 
 ![krea2 character composite](Krea2/character-composite/krea2-i2i-character-composite.png)
