@@ -6,6 +6,8 @@
   - [Krea 2](#krea-2)
     - [Krea 2 Character Composite](#krea-2-character-composite)
     - [Krea 2 Character Sheet](#krea-2-character-sheet)
+    - [Krea 2 Detailer](#krea-2-detailer)
+    - [Krea 2 UI-Icons](#krea-2-ui-icons)
   - [Minimax H3](#minimax-h3)
     - [H3 Prompt](#h3-prompt)
       - [H3 Prompt Generators](#h3-prompt-generators)
@@ -14,7 +16,9 @@
       - [H3 Yolo Detailer](#h3-yolo-detailer)
     - [H3 Ref-to-video](#h3-ref-to-video)
       - [Product + character](#product--character)
-
+  - [Qwen Image Edit](#qwen-image-edit)
+    - [QIE Character Emplace](#qie-character-emplace)
+ 
 ## Flux 2 Klein 9b
 ### [F2K9b Detailer](Flux2Klein9b/detailer/f2k9b-i2i-detailer.json)
 Detailer to work with high resolution sources, with finer control over changed areas.
@@ -31,6 +35,16 @@ Use multiple reference characters in a scene. Uses the [identity edit lora](http
 Character sheet generation from source image. Uses the [identity edit lora](https://huggingface.co/conradlocke/krea2-identity-edit/blob/main/krea2_identity_edit_v1_2.safetensors). Source character should be in a somewhat neutral pose, using a source with dynamic poses is likely to fail.
 
 ![krea2 character sheet](Krea2/character-sheet/krea2-i2i-character-sheet.png)
+
+### [Krea 2 Detailer](Krea2/detailer/)
+Improves detail of images. Limited to the abilities of a non-edit model, style changes and detail improvement work well, major modifications are less reliable. Results are more consistent when using images initially generated with Krea 2.
+
+![krea2 detailer](Krea2/detailer/krea2-detailer.png)
+
+### [Krea 2 UI-Icons](Krea2/ui-icon/)
+Simple workflow for generating alphas or icons for UI work. Crops the image to the subject's boundaries and returns the image with alpha transparency. A plain background helps to isolate the subject cleanly.
+
+![krea2 ui icon](Krea2/ui-icon/krea2-ui-icon.png)
 
 ## Minimax H3
 ### H3 Prompt
@@ -56,3 +70,9 @@ Improve detail of low-resolution areas: faces, text, etc. The detailers crop, re
 Example of combining a charcter with an object.
 
 <video controls src="https://github.com/user-attachments/assets/85d6339c-dc9d-47e0-97b4-4c41aba2820d" style="max-height:400px"></video>
+
+## Qwen Image Edit
+### [QIE Character Emplace](QwenImageEdit/character-emplace/)
+Emplace a character within a scene with controllable boundaries and scale. The masked region is rectified to a square compatible with flux kontext resolution (1024x1024). Works well with editing small regions within a larger image that would not fit QIE's scale requirements.
+
+![qie-character-emplace](QwenImageEdit/character-emplace/qie-character-scene-emplace.png)
